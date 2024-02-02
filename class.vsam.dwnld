@@ -1,0 +1,1747 @@
+1                         J E S 2  J O B  L O G  --  S Y S T E M  M V S 1  --  N O D E  N 1
+0
+ 10.50.18 JOB06785 ---- FRIDAY,    02 FEB 2024 ----
+ 10.50.18 JOB06785  IRR010I  USERID TRAIN05  IS ASSIGNED TO THIS JOB.
+ 10.50.18 JOB06785  ICH70001I TRAIN05  LAST ACCESS AT 10:48:17 ON FRIDAY, FEBRUARY 2, 2024
+ 10.50.18 JOB06785  $HASP373 TRAIN05I STARTED - INIT 1    - CLASS A        - SYS MVS1
+ 10.50.18 JOB06785  IEF403I TRAIN05I - STARTED - TIME=10.50.18
+ 10.50.18 JOB06785  -                                      ----TIMINGS (MINUTES)-----                          -----PAGING COUNTS----
+ 10.50.18 JOB06785  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+ 10.50.18 JOB06785  -PTPCH                00    241     13  0.000921  0.000041    0.0           374  PRDBAT       0     0     0     0
+ 10.50.18 JOB06785  IEF404I TRAIN05I - ENDED - TIME=10.50.18
+ 10.50.18 JOB06785  -TRAIN05I ENDED.  NAME-MAINTEC              TOTAL TCB CPU TIME= 0.000921 TOTAL ELAPSED TIME=   0.0 SUBSYS=JES2
+ 10.50.18 JOB06785  $HASP395 TRAIN05I ENDED - RC=0000
+0------ JES2 JOB STATISTICS ------
+-  02 FEB 2024 JOB EXECUTION DATE
+-           17 CARDS READ
+-        1,750 SYSOUT PRINT RECORDS
+-            0 SYSOUT PUNCH RECORDS
+-          148 SYSOUT SPOOL KBYTES
+-         0.00 MINUTES EXECUTION TIME
+         1 //TRAIN05I JOB 43312,'MAINTEC',                                         JOB06785
+           //             CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1),NOTIFY=&SYSUID         00020000
+           //*******************************************************               00030000
+           //*** I-P-O  I(NPUT)   P(ROCESS)   O(UTPUT)  ************               00040000
+           //*** I - LIBRARY                          **************               00050000
+           //*** P - PRINT ENTIRE LIBRARY FROM SYSUT1  TO  SYSUT2  *               00060000
+           //***     PO=LIBRARY (MAX)MEMBS 200 1 RECORD FIELDS STMT*               00070000
+           //*** O - SEND DATA TO "PRINT" / JES / ******************               00080000
+           //*******************************************************               00090000
+           IEFC653I SUBSTITUTION JCL - 43312,'MAINTEC',CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1),NOTIFY=TRAIN05
+         2 //PTPCH EXEC  PGM=IEBPTPCH                                              00100000
+         3 //SYSPRINT DD  SYSOUT=*                                                 00110000
+         4 //SYSIN    DD  *                                                        00120000
+         5 //SYSUT2   DD  SYSOUT=*                                         OUTPUT  00150000
+           //******  PRINT UP TO 200 MEMBERS OF A PDS                              00160000
+         6 //SYSUT1  DD  DSN=TRAIN05.CLASS.VSAM,DISP=SHR                   INPUT   00170002
+ ICH70001I TRAIN05  LAST ACCESS AT 10:48:17 ON FRIDAY, FEBRUARY 2, 2024
+ IEFA111I TRAIN05I IS USING THE FOLLOWING JOB RELATED SETTINGS:
+          SWA=BELOW,TIOT SIZE=32K,DSENQSHR=DISALLOW,GDGBIAS=JOB
+ IEF236I ALLOC. FOR TRAIN05I PTPCH
+ IEF237I JES2 ALLOCATED TO SYSPRINT
+ IEF237I JES2 ALLOCATED TO SYSIN
+ IEF237I JES2 ALLOCATED TO SYSUT2
+ IEF237I 30B3 ALLOCATED TO SYSUT1
+ IEF142I TRAIN05I PTPCH - STEP WAS EXECUTED - COND CODE 0000
+ IEF285I   TRAIN05.TRAIN05I.JOB06785.D0000102.?         SYSOUT
+ IEF285I   TRAIN05.TRAIN05I.JOB06785.D0000101.?         SYSIN
+ IEF285I   TRAIN05.TRAIN05I.JOB06785.D0000103.?         SYSOUT
+ IEF285I   TRAIN05.CLASS.VSAM                           KEPT
+ IEF285I   VOL SER NOS= USER01.
+ IEF373I STEP/PTPCH   /START 2024033.1050
+ IEF032I STEP/PTPCH   /STOP  2024033.1050
+         CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC
+         VIRT:    68K  SYS:   252K  EXT:        0K  SYS:    12796K
+         ATB- REAL:                  1056K  SLOTS:                     0K
+              VIRT- ALLOC:      13M SHRD:       0M
+ IEF375I  JOB/TRAIN05I/START 2024033.1050
+ IEF033I  JOB/TRAIN05I/STOP  2024033.1050
+         CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC
+1
+-PRINT/PUNCH DATA SET UTILITY                                                                      PAGE 0001
+   PRINT TYPORG=PO,MAXNAME=200,MAXFLDS=1                                 00130000
+   RECORD FIELD=(80)                                                     00140000
+  EOF ON SYSIN
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+1                                                                                                              PAGE 0001
+ MEMBER NAME  PKSDSE
+ //TRAIN051   JOB (123),'REGGIE CALHOUN',                                00010000
+ //         MSGCLASS=X,CLASS=A,NOTIFY=&SYSUID,TIME=(0,3)                 00020000
+ //********************************************************************  00030000
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)  **********************  00040000
+ //*** I - DD * TO LIST RECORDS                                ********  00050000
+ //*** P - PGM=IDCAMS REPRO TO COPY                                      00060000
+ //*** O - DSN= PRINT CONTENTS INTO &&TEMP DATASET                    *  00070000
+ //********************************************************************  00080000
+ //PRINT EXEC PGM=IDCAMS                                                 00090000
+ //IDIN  DD   DSN=TRAIN05.DEPT.KSDS.FILE,DISP=SHR INPUT                  00100000
+ //IDOUT DD   SYSOUT=*                            OUTPUT                 00110000
+ //SYSPRINT DD SYSOUT=*,OUTLIM=1000                                      00120000
+ //SYSIN DD *                                                            00130000
+      LISTCAT ENTRY (TRAIN05.DEPT.KSDS.FILE) ALL                         00131000
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) CHAR                             00140000
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) DUMP                             00141000
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) HEX                              00142000
+ /*                                                                      00150000
+ //SYSDUMP DD SYSOUT=*                                                   00160000
+1                                                                                                              PAGE 0002
+ MEMBER NAME  PKSDSD
+ //TRAIN051   JOB (123),'REGGIE CALHOUN',                                00010002
+ //         MSGCLASS=X,CLASS=A,NOTIFY=&SYSUID,TIME=(0,3)                 00020002
+ //********************************************************************  00030002
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)  **********************  00040002
+ //*** I - DD * TO LIST RECORDS                                ********  00050002
+ //*** P - PGM=IDCAMS REPRO TO COPY                                      00060002
+ //*** O - DSN= PRINT CONTENTS INTO &&TEMP DATASET                    *  00070002
+ //********************************************************************  00080002
+ //PRINT EXEC PGM=IDCAMS                                                 00090002
+ //IDIN  DD   DSN=TRAIN05.EMP.KSDS.FILE,DISP=SHR INPUT                   00100003
+ //IDOUT DD   SYSOUT=*                            OUTPUT                 00110002
+ //SYSPRINT DD SYSOUT=*,OUTLIM=1000                                      00120002
+ //SYSIN DD *                                                            00130002
+      LISTCAT ENTRY (TRAIN05.EMP.KSDS.FILE) ALL                          00131003
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) CHAR                             00140002
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) DUMP                             00141002
+      PRINT INFILE(IDIN) OUTFILE(IDOUT) HEX                              00142002
+ /*                                                                      00150002
+ //SYSDUMP DD SYSOUT=*                                                   00160002
+1                                                                                                              PAGE 0003
+ MEMBER NAME  NEWINBUF
+        01  WS-IN-BUFFER.                                                00010000
+             05  WS-TRAN-CODE                  PIC X(01).                00020000
+             05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                00030000
+             05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                00040000
+               05  WS-TRAN-COL-NAME REDEFINES                            00050000
+               WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                      00060000
+             05  WS-TRAN-LAST-NAME             PIC X(15).                00070000
+             05  WS-TRAN-FIRST-NAME            PIC X(12).                00080000
+             05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                00090000
+             05  WS-TRAN-PHONE-NUMBER          PIC X(04).                00100000
+             05  WS-TRAN-JOBTITLE              PIC X(09)                 00110000
+             05  WS-TRAN-SALARY                PIC 9(5)V99.              00120000
+             05  WS-TRAN-BONUS                 PIC 9(5)V99.              00130000
+             05  WS-TRAN-COMM                  PIC 9(5)V99.              00140000
+             05  FILLER                        PIC X(08).                00150000
+1                                                                                                              PAGE 0004
+ MEMBER NAME  ESDSE
+ //TRAIN05E   JOB (123),'REGGIE CALHOUN',                                00010000
+ //         MSGCLASS=X,CLASS=A,NOTIFY=&SYSUID,TIME=(0,3)                 00020000
+ //********************************************************************  00030000
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)  **********************  00040000
+ //*** I - DD * TO LIST RECORDS                                ********  00050000
+ //*** P - PGM=IDCAMS REPRO TO COPY                                      00060000
+ //*** O - DSN= PRINT CONTENTS INTO &&TEMP DATASET                    *  00070000
+ //********************************************************************  00080000
+ //REPRO EXEC PGM=IDCAMS                                                 00090000
+ //IDIN  DD   DSN=TRAIN05.CLASS.VSAM.EMPDATA,DISP=SHR                    00100000
+ //SYSPRINT DD SYSOUT=*,OUTLIM=1000                                      00110000
+ //SYSIN DD *                                                            00120000
+      DELETE  (TRAIN05.CLASS.VSAM.ESDS.EMP)                              00130001
+      DEFINE  CLUSTER                                 -                  00140000
+              (                                       -                  00150000
+               NAME(TRAIN05.CLASS.VSAM.ESDS.EMP)      -                  00160001
+               RECORDS (100 50 )                      -                  00170000
+               VOLUME(USER23)                         -                  00180000
+               FSPC(20 10 )                           -                  00190000
+               KEYS(6 0)                              -                  00200000
+               RECORDSIZE(80 80)                      -                  00210000
+                                             )                           00220000
+      REPRO   INFILE(IDIN) ODS(TRAIN05.CLASS.VSAM.ESDS.EMP)              00230001
+      PRINT   IDS(TRAIN05.CLASS.VSAM.ESDS.EMP) CHAR                      00240001
+      PRINT   IDS(TRAIN05.CLASS.VSAM.ESDS.EMP) HEX                       00250001
+      PRINT   IDS(TRAIN05.CLASS.VSAM.ESDS.EMP) DUMP                      00260001
+      LISTCAT ENTRY (TRAIN05.CLASS.VSAM.ESDS.EMP) ALL                    00270001
+ /*                                                                      00280000
+ //SYSDUMP DD SYSOUT=*                                                   00290000
+1                                                                                                              PAGE 0005
+ MEMBER NAME  COMPILE6
+ //TRAIN006 JOB ,,CLASS=A,NOTIFY=&SYSUID                            <CHG 00010000
+ //   JCLLIB ORDER=(TRAIN00.CLASS.COBOL)                                 00020000
+ //STEP1        EXEC IGYWCLG,LIBPRFX=CEE,PARM.COBOL='LIST,MAP'           00030000
+ //**************************************************************        00040000
+ //**************************************************************        00050000
+ //****  CHANGE TRAIN00 TO YOUR TSOID   FOR THE NEXT 3 DSNS              00060000
+ //****    AND CHANGE THE JOBNAME  AND THE TRANFILE DSN  ********        00070000
+ //**************************************************************        00080000
+ //**************************************************************        00090000
+ //COBOL.SYSIN   DD  DSN=TRAIN00.CLASS.COBOL(S0C7ABND),DISP=SHR     <CHG 00100000
+ //LKED.SYSLMOD  DD  DSNAME=TRAIN00.CLASS.LOADLIB(COBSHEL),DISP=SHR <CHG 00110000
+ //GO.STEPLIB    DD  DSNAME=TRAIN00.CLASS.LOADLIB,DISP=SHR          <CHG 00120000
+ //**************************************************************        00130000
+ //**************************************************************        00140000
+ //GO.SYSOUT     DD  SYSOUT=*,OUTLIM=1000                                00150000
+ //DEPTFILE  DD DSN=TRAIN00.CLASS.DEPTFILE,DISP=SHR                      00160000
+ //EMPFILE   DD DSN=TRAIN00.CLASS.EMPFILE,DISP=SHR                       00170000
+ //TRANFILE  DD DSN=TRAIN00.CLASS.TRANS,DISP=SHR                    <CHG 00180000
+ //PRTDEPT   DD SYSOUT=*,OUTLIM=1000                                     00190000
+ //PRTEMP    DD SYSOUT=*,OUTLIM=1000                                     00200000
+1                                                                                                              PAGE 0006
+ MEMBER NAME  INDEX
+ INDEX    -    NOTES ON INPUT, PROCESS, AND OUTPUT                       00010001
+ ________________________________________________________________________00020000
+ KSDSD    -    INOUT   - DSN= TRAIN05.CLASS.VSAM.DEPTDATA                00021002
+               PROCESS - PGM=IDCAMS DELETE,DEFINE,REPRO,PRINT,LISTCAT    00022002
+                             PARM= 3 KEY SPACES                          00022102
+               OUTPUT  - DSN= DEPT.KSDS.FILE                             00023000
+ ________________________________________________________________________00030000
+ KSDSE    -    INOUT   - DSN= TRAIN05.CLASS.VSAM.EMPDATA                 00040002
+               PROCESS - PGM=IDCAMS DELETE,DEFINE,REPRO,PRINT,LISTCAT    00050002
+                             PARM= 6 KEY SPACES                          00051002
+               OUTPUT  - DSN= EMP.KSDS.FILE                              00060000
+ ________________________________________________________________________00070000
+ ESDSE    -    INOUT   - DSN= TRAIN05.CLASS.VSAM.EMPDATA                 00071002
+               PROCESS - PGM=IDCAMS DELETE,DEFINE,REPRO,PRINT,LISTCAT    00072002
+                             PARM= 6 KEY SPACES                          00073002
+               OUTPUT  - DSN= TRAIN05.CLASS.VSAM.ESDS.EMP                00074002
+ ________________________________________________________________________00075002
+ ESDSD    -    INOUT   - DSN= TRAIN05.CLASS.VSAM.DEPTDATA                00076002
+               PROCESS - PGM=IDCAMS DELETE,DEFINE,REPRO,PRINT,LISTCAT    00077002
+                             PARM= 3 KEY SPACES                          00078002
+               OUTPUT  - DSN= TRAIN05.CLASS.VSAM.ESDS.DEPT               00079002
+ ________________________________________________________________________00079102
+ ________________________________________________________________________00120002
+1                                                                                                              PAGE 0007
+ MEMBER NAME  COBSHEL
+        IDENTIFICATION DIVISION.                                         00010000
+        PROGRAM-ID.       COBSHEL.                                       00020000
+       ***************************************************************** 00030000
+       ***********    CHANGE LOG   ************************************* 00040000
+       *---------------------------------------------------------------* 00050000
+       ** CHANGE NUMBER    DATE      DESCIPTION                        * 00060000
+       *---------------------------------------------------------------* 00070000
+       *    NONE          10-23      ORIGINAL CODE                       00080000
+ CNN   *    CNN    IN COLUMNS 1-3                                        00100000
+ C1    *    C1  11-30 ADDED NEW IN-BUFFER INTO WORKING STORAGE           00101004
+ C2    *    C2  11-30 ADDED TRAN EOF, FILE STATUS, AND INPUT SWITCH      00102004
+ C3    *    C3  11-30 ADDED EMP-KSDS, FILE STATUS, AND WORKING STORAGE   00103005
+ C4    *    C4  12-03 ADD PROCEDURE DIVISION PRE 0500                    00104005
+       ***************************************************************** 00110000
+       *******  PROGRAM STRUCTURE    *********************************** 00120000
+       ***************************************************************** 00130000
+       *** 0000-MAIN.                                                    00140000
+       *** 1000-PROCESS-TRAN-FILE                                        00150002
+       ***     OPEN TRAN-FILE                                            00160002
+       ***         1100-PROCESS-TRAN-REC                                 00170002
+       ***     CLOSE TRAN-FILE                                           00180002
+       *** 1110-PROCESS-TRAN-REC-DETAILS                                 00190002
+       ***************************************************************** 00200000
+        ENVIRONMENT DIVISION.                                            00210000
+        INPUT-OUTPUT SECTION.                                            00220000
+        FILE-CONTROL.                                                    00230000
+       **********************************************************        00240000
+       **  THE DD NAME FOR THE TRANSACTION FILE IS TRANFILE  ****        00250002
+       **  LOOK FOR //TRANFILE  DD  DSN= . . .  IN THE JCL   ****        00260002
+       **********************************************************        00270000
+ C2         SELECT TRAN-FILE  ASSIGN TO TRANFILE                         00280005
+ C2                FILE STATUS       IS WS-TRAN-FILE-STATUS.             00281005
+ C3         SELECT EMP-KSDS   ASSIGN TO EMPFILE                          00282005
+ C3                ORGANIZATION      IS INDEXED                          00282105
+ C3                ACCESS MODE       IS DYNAMIC                          00282205
+ C3                RECORD KEY        IS EMP-KEY                          00282305
+ C3                FILE STATUS       IS WS-EMP-KSDS-STATUS.              00283005
+       *** PROGRAM FILE NAME            JCL DDNAME ***************       00290000
+        DATA DIVISION.                                                   00300000
+        FILE SECTION.                                                    00310000
+                                                                         00320000
+       ********* FD AND IT'S 01  ARE A "MATCHED PAIR" *****************  00330000
+ C2     FD  TRAN-FILE                                                    00340005
+ C2         RECORD CONTAINS 80 CHARACTERS                                00350005
+ C2         BLOCK  CONTAINS  0 RECORDS                                   00360005
+ C2         RECORDING  MODE IS F.                                        00370005
+ C2     01  TRAN-REC.                                                    00380005
+ C2         05  TRAN-REC-TRAN-CODE             PIC X(01).                00381005
+ C2         05  TRAN-REC-EMPNO                 PIC X(06).                00382005
+ C2         05                                 PIC X(73).                00383005
+ C3     FD  EMP-KSDS                                                     00384005
+ C3         RECORD CONTAINS 80 CHARACTERS                                00385005
+ C3     01  EMP-REC.                                                     00388005
+ C3         05  EMP-REC-EMPNO                  PIC X(06).                00389105
+ C3         05                                 PIC X(74).                00389205
+       ********* FD AND IT'S 01  ARE A "MATCHED PAIR" ****************** 00390000
+                                                                         00400000
+        WORKING-STORAGE SECTION.                                         00410000
+1                                                                                                              PAGE 0008
+ MEMBER NAME  COBSHEL
+       ********* WS - OUR DATA NAMES *******************                 00420000
+ C1     01  WS-TRAN-OUTPUT.                                              00420105
+ C1         05  WS-TRAN-OUTPUT-REC.            PIC X(132).               00420205
+                                                                         00420304
+ C1     01  WS-TRAN-REC.                                                 00440005
+ C1          05  WS-TRAN-CODE                  PIC X(01).                00441005
+ C1          05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                00442005
+ C1          05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                00443005
+ C1            05  WS-TRAN-COL-NAME REDEFINES                            00444005
+ C1                  WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                00445005
+ C1          05  WS-TRAN-LAST-NAME             PIC X(15).                00446005
+ C1          05  WS-TRAN-FIRST-NAME            PIC X(12).                00447005
+ C1          05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                00448005
+ C1          05  WS-TRAN-PHONE-NUMBER          PIC X(04).                00449005
+ C1          05  WS-TRAN-JOBTITLE              PIC X(09)                 00449105
+ C1          05  WS-TRAN-SALARY                PIC 9(5)V99.              00449205
+ C1          05  WS-TRAN-BONUS                 PIC 9(5)V99.              00449305
+ C1          05  WS-TRAN-COMM                  PIC 9(5)V99.              00449405
+ C1          05  FILLER                        PIC X(08).                00449505
+                                                                         00449604
+ C2     01  WS-EMP-KSDS-STATUS                 PIC X(02).                00449705
+ C2     01  WS-TRAN-FILE-STATUS                PIC X(02).                00449805
+ C2     01 WS-TRAN-REC-SWITCH                  PIC X(01).                00449905
+ C2            88  NO-MORE-INPUT       VALUE 'N'.                        00450005
+ C2            88  MORE-INPUT          VALUE 'Y'.                        00450105
+        LINKAGE SECTION.                                                 00451000
+                                                                         00460000
+        PROCEDURE DIVISION.                                              00470000
+ C4         DISPLAY '************* START OF PROGRAM VSAMSK01 *****'      00471005
+ C4         OPEN INPUT EMP-KSDS                                          00472005
+ C4    *----- ADD OPEN I-O FOR EMP-KSDS                                  00473005
+ C4    *----- ADD STATUS CODE CHECKING                                   00474005
+ C4         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00475005
+ C4            CONTINUE                                                  00476005
+ C4         ELSE DISPLAY 'WS-EMP-KSDS-STATUS-CODE='                      00477005
+ C4                       WS-EMP-KSDS-STATUS-CODE                        00478005
+ C4        END-IF                                                        00479005
+ C4        PERFORM 0500-PROCESS-EMP-KSDS                                 00479105
+ C4              UNTIL WS-INPUT-SWITCH = 'N'                             00479205
+ C4        CLOSE EMP-KSDS                                                00479305
+ C4    *----- ADD CLOSE FOR EMP-KSDS                                     00479405
+ C4    *----- ADD STATUS CODE CHECKING                                   00479505
+ C4        GOBACK                                                        00479605
+           .                                                             00479705
+       ********* OUR WORKING CODE I.E. INSTRUCTIONS / COMMANDS ********* 00480000
+        0000-MAIN.                                                       00490000
+       ********* A DISPLAY TO SHOW US WHERE WE ARE AT EXECUTION TIME ****00500000
+            DISPLAY '0000-MAIN'                                          00510000
+                                                                         00520000
+       ********* PERFORM - EXECUTE AND RETURN TO AFTER THE PERFORM ***** 00530000
+ C1         PERFORM 1000-PROCESS-TRAN-FILE                               00540005
+ C3         PERFORM 2000-PROCESS-EMP-KSDS                                00541005
+                                                                         00551005
+       ********* GOBACK - RETURN TO Z/OS ****************                00560000
+            GOBACK                                                       00570000
+            .                                                            00580000
+                                                                         00590000
+                                                                         00600000
+1                                                                                                              PAGE 0009
+ MEMBER NAME  COBSHEL
+        1000-PROCESS-TRAN-FILE.                                          00610002
+       **********************************************************        00620000
+       ***  OPEN THE TRANSACTION FILE TO ALLOW FOR PROCESSING  **        00630002
+       ***  PROCESS THE TRANSACTION FILE IN THE 1000- PARAGRAPH **       00640002
+       ***  CLOSE THE TRANSACTION FILE WHEN THE PROCESSING IN  **        00650002
+       ***      PARAGRAPH 1100- IS FINISHED                    **        00660000
+       *** A DISPLAY TO SHOW US WHERE WE ARE AT EXECUTION TIME **        00670000
+       **********************************************************        00680000
+            DISPLAY '1000-PROCESS-TRAN-FILE'                             00690002
+                                                                         00700000
+       ********* OPEN - MAKE THE FILE AVAIALBLE FOR READING ************ 00710000
+            OPEN INPUT TRAN-FILE                                         00720002
+       ********* MOVE SPACES    RESET EOF (END-OF-FILE) INDICATOR ****** 00730000
+            MOVE SPACES  TO  WS-TRAN-EOF                                 00740004
+                                                                         00750000
+       ********* PERFORM - EXECUTE AND RETURN TO AFTER THE PERFORM ***** 00760000
+            PERFORM 1100-PROCESS-TRAN-REC                                00770002
+                                                                         00780000
+       ********* CLOSE -  FILE IS NO LONGER AVAILABLE FOR READING *****  00790000
+            CLOSE TRAN-FILE                                              00800002
+            .                                                            00810000
+                                                                         00820000
+        1100-PROCESS-TRAN-REC.                                           00830002
+       **********************************************************        00840000
+       ********  READ ONE REC FROM THE TRANSACTION FILE ******           00850002
+       **********************************************************        00860000
+            DISPLAY '1100-PROCESS-TRAN-REC'                              00870002
+                                                                         00880000
+       ********* READ   MOVE A REC FROM Z/OS TO THE PROGRAM *********    00890000
+       ********* AT END OF FILE (I.E. NO MORE INPUT RECRDS    ********** 00900000
+       *********     MOVE 'END' TO INDICATE END OF FILE FOR PROGRAM **** 00910000
+       ********* NOT AT END OF FILE PROCESS THIS REC       **********    00920000
+            READ TRAN-FILE INTO  WS-TRAN-REC                             00930002
+                AT END      MOVE 'END' TO WS-TRAN-EOF                    00940004
+                NOT AT END  DISPLAY 'WS-TRAN-REC ='  WS-TRAN-REC         00950002
+            END-READ                                                     00960000
+            .                                                            00970000
+       ********  END OF PROGRAM    COBSHEL ***********************       00980000
+1                                                                                                              PAGE 0010
+ MEMBER NAME  BACKUP01
+        IDENTIFICATION DIVISION.                                         00010000
+       *-----------------------                                          00020000
+        PROGRAM-ID.       VSAMSK01.                                      00030000
+       ***************************************************************** 00031000
+       ***********    CHANGE LOG   ************************************* 00032000
+       *---------------------------------------------------------------* 00033000
+       ** CHANGE NUMBER    DATE      DESCIPTION                        * 00034000
+       *---------------------------------------------------------------* 00035000
+       *    NONE          10-23      ORIGINAL CODE                       00036000
+ CNN   *    CNN    IN COLUMNS 1-3                                        00037000
+ C1    *    C1  11-30 ADDED NEW IN-BUFFER INTO WORKING STORAGE           00038000
+       ***************************************************************** 00039300
+       *******  PROGRAM STRUCTURE    *********************************** 00039400
+       ***************************************************************** 00039500
+       *** 0000-MAIN.                                                    00039600
+       *** 1000-PROCESS-TRAN-FILE                                        00039700
+       ***     OPEN TRAN-FILE                                            00039800
+       ***         1100-PROCESS-TRAN-REC                                 00039900
+       ***     CLOSE TRAN-FILE                                           00040000
+       *** 1110-PROCESS-TRAN-REC-DETAILS                                 00040100
+       ***************************************************************** 00040200
+        ENVIRONMENT DIVISION.                                            00041000
+       *--------------------                                             00050000
+        CONFIGURATION SECTION.                                           00060000
+        INPUT-OUTPUT SECTION.                                            00070000
+        FILE-CONTROL.                                                    00080000
+            SELECT CARDIN           ASSIGN TO CARDIN                     00090000
+                 FILE STATUS IS WS-CARDIN-STATUS-CODE.                   00100000
+       *----- ADD SELECT FOR EMP-KSDS 5 LINES                            00110000
+        DATA DIVISION.                                                   00120000
+        FILE SECTION.                                                    00130000
+        FD  CARDIN                                                       00140000
+            RECORD CONTAINS 80 CHARACTERS                                00150000
+            RECORDING MODE IS F                                          00160000
+            BLOCK CONTAINS 0 RECORDS.                                    00170000
+        01 CARDREC.                                                      00180000
+           05  CARDIN-TRAN-CODE              PIC X(01).                  00190000
+           05  CARDIN-EMPNO                  PIC X(06).                  00200000
+           05                                PIC X(73).                  00210000
+       *----- ADD FD AND 01 (WITH EMP-KEY) FOR EMP KSDS                  00220000
+        WORKING-STORAGE SECTION.                                         00230000
+        01 WS-OUTPUT-BUFFER.                                             00240000
+           05  WS-OUTPUT-BUFFER-REC           PIC X(132).                00250000
+ *                                                                       00251000
+ C1     01  WS-IN-BUFFER.                                                00252000
+ C1          05  WS-TRAN-CODE                  PIC X(01).                00253000
+ C1          05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                00254000
+ C1          05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                00255000
+ C1            05  WS-TRAN-COL-NAME REDEFINES                            00256000
+ C1                  WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                00257000
+ C1          05  WS-TRAN-LAST-NAME             PIC X(15).                00258000
+ C1          05  WS-TRAN-FIRST-NAME            PIC X(12).                00259000
+ C1          05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                00260000
+ C1          05  WS-TRAN-PHONE-NUMBER          PIC X(04).                00270000
+ C1          05  WS-TRAN-JOBTITLE              PIC X(09)                 00280000
+ C1          05  WS-TRAN-SALARY                PIC 9(5)V99.              00290000
+ C1          05  WS-TRAN-BONUS                 PIC 9(5)V99.              00300000
+ C1          05  WS-TRAN-COMM                  PIC 9(5)V99.              00310000
+1                                                                                                              PAGE 0011
+ MEMBER NAME  BACKUP01
+ C1          05  FILLER                        PIC X(08).                00320000
+                                                                         00391000
+        01 WS-EMP-FILE-STATUS-CODE            PIC X(02).                 00400000
+        01 WS-CARDIN-STATUS-CODE              PIC X(02).                 00410000
+        01 WS-INPUT-SWITCH                    PIC X(01) VALUE 'Y'.       00420000
+               88 NO-MORE-INPUT       VALUE 'N'.                         00430000
+               88 MORE-INPUT          VALUE 'Y'.                         00440000
+                                                                         00441000
+        PROCEDURE DIVISION.                                              00450000
+            DISPLAY '************* START OF PROGRAM VSAMSK01 *****'      00460000
+            OPEN INPUT CARDIN                                            00470000
+       *----- ADD OPEN I-O FOR EMP-KSDS                                  00480000
+       *----- ADD STATUS CODE CHECKING                                   00490000
+            IF WS-CARDIN-STATUS-CODE = '00'                              00500000
+               CONTINUE                                                  00510000
+         ELSE DISPLAY 'WS-CARDIN-STATUS-CODE='                           00520000
+                       WS-CARDIN-STATUS-CODE                             00530000
+                                                                         00531000
+         END-IF                                                          00540000
+                                                                         00541000
+         PERFORM 0500-PROCESS-INPUT                                      00550000
+               UNTIL WS-INPUT-SWITCH = 'N'                               00560000
+              CLOSE CARDIN                                               00570000
+         *----- ADD CLOSE FOR EMP-KSDS                                   00580000
+         *----- ADD STATUS CODE CHECKING                                 00590000
+              GOBACK                                                     00600000
+              .                                                          00610000
+         0500-PROCESS-INPUT.                                             00620000
+             DISPLAY '0500-PROCESS-INPUT'                                00630000
+             READ CARDIN RECORD INTO WS-IN-BUFFER                        00640000
+                AT END MOVE 'N' TO WS-INPUT-SWITCH                       00650000
+                NOT AT END CONTINUE                                      00660000
+         END-READ                                                        00670000
+                                                                         00680000
+        IF WS-CARDIN-STATUS-CODE = '00'                                  00690000
+           CONTINUE                                                      00700000
+        ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='              00710000
+                      WS-CARDIN-STATUS-CODE                              00720000
+        END-IF                                                           00730000
+        DISPLAY ' '                                                      00740000
+        DISPLAY ' '                                                      00750000
+        DISPLAY '*************************************'                  00760000
+        DISPLAY '*************************************'                  00770000
+        DISPLAY '* WS-IN-BUFFER=', WS-IN-BUFFER                          00780000
+        DISPLAY '*************************************'                  00790000
+        DISPLAY '*************************************'                  00800000
+                                                                         00801000
+        IF MORE-INPUT                                                    00810000
+            EVALUATE WS-TRAN-CODE                                        00820000
+                WHEN 'L' PERFORM 1000-WS-TRAN-L                          00830000
+                WHEN 'A' PERFORM 2000-WS-TRAN-A                          00840000
+                WHEN 'E' PERFORM 3000-WS-TRAN-E                          00850000
+                WHEN 'I' PERFORM 4000-WS-TRAN-I                          00860000
+                WHEN 'D' PERFORM 5000-WS-TRAN-D                          00870000
+                WHEN 'U' PERFORM 6000-WS-TRAN-U                          00880000
+                WHEN 'Z' PERFORM 7000-WS-TRAN-Z                          00890000
+                WHEN 'Y' PERFORM 8000-WS-TRAN-Y                          00900000
+                WHEN 'X' PERFORM 9000-WS-TRAN-X                          00910000
+1                                                                                                              PAGE 0012
+ MEMBER NAME  BACKUP01
+                WHEN 'W' PERFORM A000-WS-TRAN-W                          00920000
+                WHEN 'T' PERFORM B000-WS-TRAN-T                          00930000
+                WHEN OTHER PERFORM N000-OTHER-TRAN                       00940000
+        END-EVALUATE                                                     00950000
+        .                                                                00960000
+        1000-WS-TRAN-L.                                                  00970000
+             DISPLAY '  '                                                00980000
+             DISPLAY '   --------------------------------'               00990000
+             DISPLAY '   ---- PROCESS TRAN CODE L -------'               01000000
+             DISPLAY '   --------------------------------'               01010000
+       *----- ADD KEY READ                                               01020000
+       *----- ADD STATUS CODE CHECKING .                                 01030000
+        2000-WS-TRAN-A.                                                  01040000
+             DISPLAY '  '                                                01050000
+             DISPLAY '    -------------------------------------'         01060000
+             DISPLAY '2000 TRAN CODE A....'                              01070000
+             .                                                           01080000
+       3000-WS-TRAN-E.                                                   01090000
+            DISPLAY '  '                                                 01100000
+            DISPLAY '    -------------------------------------'          01110000
+            DISPLAY '3000 TRAN CODE E....'                               01120000
+            .                                                            01130000
+       4000-WS-TRAN-I.                                                   01140000
+            DISPLAY '  '                                                 01150000
+            DISPLAY '    -------------------------------------'          01160000
+            DISPLAY '4000 TRAN CODE I....'                               01170000
+            .                                                            01180000
+       5000-WS-TRAN-D.                                                   01190000
+            DISPLAY '  '                                                 01200000
+            DISPLAY '   ----------------------------------'              01210000
+            DISPLAY '5000 TRAN CODE D....'                               01220000
+            .                                                            01230000
+       6000-WS-TRAN-U.                                                   01240000
+            DISPLAY '  '                                                 01250000
+            DISPLAY '   ----------------------------------'              01260000
+            DISPLAY '6000 TRAN CODE U....'                               01270000
+            .                                                            01280000
+       7000-WS-TRAN-Z.                                                   01290000
+            DISPLAY '  '                                                 01300000
+            DISPLAY '   ----------------------------------'              01310000
+            DISPLAY '7000 TRAN CODE Z....'                               01320000
+            .                                                            01330000
+       8000-WS-TRAN-Y.                                                   01340000
+            DISPLAY '  '                                                 01350000
+            DISPLAY '    -------------------------------------'          01360000
+            DISPLAY '8000 TRAN CODE Y....'                               01370000
+            .                                                            01380000
+       9000-WS-TRAN-X.                                                   01390000
+            DISPLAY '  '                                                 01400000
+            DISPLAY '    -------------------------------------'          01410000
+            DISPLAY '9000 TRAN CODE X....'                               01420000
+            .                                                            01430000
+       A000-WS-TRAN-W.                                                   01440000
+            DISPLAY '  '                                                 01450000
+            DISPLAY '    -------------------------------------'          01460000
+            DISPLAY 'A000 TRAN CODE W....'                               01470000
+            .                                                            01480000
+       B000-WS-TRAN-T.                                                   01490000
+1                                                                                                              PAGE 0013
+ MEMBER NAME  BACKUP01
+            DISPLAY '  '                                                 01500000
+            DISPLAY '    -------------------------------------'          01510000
+            DISPLAY 'B000 TRAN CODE T....'                               01520000
+            .                                                            01530000
+       N000-OTHER-TRAN.                                                  01540000
+            DISPLAY 'N000 OTHER TRAN ....'                               01550000
+            .                                                            01560000
+1                                                                                                              PAGE 0014
+ MEMBER NAME  BACKUP11
+        IDENTIFICATION DIVISION.                                         00010000
+       *-----------------------                                          00020000
+        PROGRAM-ID.       VSAMSK01.                                      00030000
+       ***************************************************************** 00031000
+       ***********    CHANGE LOG   ************************************* 00032000
+       *---------------------------------------------------------------* 00033000
+       ** CHANGE NUMBER    DATE      DESCIPTION                        * 00034000
+       *---------------------------------------------------------------* 00035000
+       *    NONE          10-23      ORIGINAL CODE                       00036000
+ CNN   *    CNN    IN COLUMNS 1-3                                        00037000
+ C1    *    C1  11-30 ADD NEW IN-BUFFER INTO WORKING STORAGE             00038000
+ C2    *    C2  11-30 ADD EMP-KSDS INTO FILE CONTROL                     00039000
+ C3    *    C3  11-30 ADD EMP-KSDS INTO FILE DEFINITION                  00039100
+ C4    *    C4  12-05 ADD OPEN I-O AND CLOSE FOR EMP-KSDS                00039200
+ C5    *    C5  12-05 ADD FILE STATUS CHECKING FOR EMP-KSDS              00039300
+ C6    *    C6  12-06 ADD EMP-KSDS READ STATEMENT AND FILE CHECKING      00039400
+ C7    *    C7  12-07 ADD EMP-KSDS INDIVIDUAL FIELDS                     00039500
+ C8    *    C8  12-07 ADD EMP-KSDS READ IN 1000 PARAGRAPH                00039600
+ C9    *    C9  12-11 ADD ALL DEPT-FILE INFORMATION                      00039800
+ C10   *    C10 12-11 ADD DEPT FILE OPEN I-O AND CLOSE                   00039900
+ C11   *    C11 12-11 ADD DEPT AND EMP FILE READ IN 3000 PARAGRAPH       00040000
+       ***************************************************************** 00040700
+       *******  PROGRAM STRUCTURE    *********************************** 00040800
+       ***************************************************************** 00040900
+       *** 0000-MAIN.                                                    00041000
+       *** 1000-PROCESS-TRAN-FILE                                        00041100
+       ***     OPEN TRAN-FILE                                            00041200
+       ***         1100-PROCESS-TRAN-REC                                 00041300
+       ***     CLOSE TRAN-FILE                                           00041400
+       *** 1110-PROCESS-TRAN-REC-DETAILS                                 00041500
+       ***************************************************************** 00041600
+        ENVIRONMENT DIVISION.                                            00042000
+       *--------------------                                             00050000
+        CONFIGURATION SECTION.                                           00060000
+        INPUT-OUTPUT SECTION.                                            00070000
+        FILE-CONTROL.                                                    00080000
+            SELECT CARDIN           ASSIGN TO CARDIN                     00090000
+                 FILE STATUS IS WS-CARDIN-STATUS-CODE.                   00100000
+       *----- ADD SELECT FOR EMP-KSDS 5 LINES                            00110000
+ C2         SELECT EMP-KSDS   ASSIGN TO EMPFILE                          00111000
+ C2                ORGANIZATION      IS INDEXED                          00112000
+ C2                ACCESS MODE       IS DYNAMIC                          00113000
+ C2                RECORD KEY        IS EMP-KEY                          00114000
+ C2                FILE STATUS       IS WS-EMP-KSDS-STATUS-CODE.         00115000
+ C9    *----- ADD SELECT FOR DEPT-KSDS 5 LINES                           00115100
+ C9         SELECT DEPT-KSDS  ASSIGN TO DEPTFILE                         00116000
+ C9                ORGANIZATION      IS INDEXED                          00117000
+ C9                ACCESS MODE       IS DYNAMIC                          00118000
+ C9                RECORD KEY        IS DEPT-KEY                         00119000
+ C9                FILE STATUS       IS WS-DEPT-KSDS-STATUS-CODE.        00119100
+        DATA DIVISION.                                                   00120000
+        FILE SECTION.                                                    00130000
+        FD  CARDIN                                                       00140000
+            RECORD CONTAINS 80 CHARACTERS                                00150000
+            RECORDING MODE IS F                                          00160000
+            BLOCK CONTAINS 0 RECORDS.                                    00170000
+        01 CARDREC.                                                      00180000
+           05  CARDIN-TRAN-CODE              PIC X(01).                  00190000
+1                                                                                                              PAGE 0015
+ MEMBER NAME  BACKUP11
+           05  CARDIN-EMPNO                  PIC X(06).                  00200000
+           05                                PIC X(73).                  00210000
+       *----- ADD FD AND 01 (WITH EMP-KEY) FOR EMP KSDS                  00220000
+ C3     FD  EMP-KSDS                                                     00221000
+ C3         RECORD CONTAINS 80 CHARACTERS.                               00222000
+ C3     01  EMP-REC.                                                     00223000
+ C3         05  EMP-KEY                        PIC X(06).                00224000
+ C3         05                                 PIC X(74).                00225000
+       *----- ADD FD AND 01 (WITH DEPT-KEY) FOR DEPT-KSDS                00226000
+ C9     FD  DEPT-KSDS                                                    00227000
+ C9         RECORD CONTAINS 80 CHARACTERS.                               00228000
+ C9     01  DEPT-REC.                                                    00229000
+ C9         05  DEPT-KEY                       PIC X(03).                00229100
+ C9         05                                 PIC X(77).                00229200
+        WORKING-STORAGE SECTION.                                         00230000
+        01 WS-OUTPUT-BUFFER.                                             00240000
+           05  WS-OUTPUT-BUFFER-REC            PIC X(132).               00250000
+                                                                         00251000
+ C1     01  WS-IN-BUFFER.                                                00252000
+ C1       05  WS-TRAN-CODE                  PIC X(01).                   00253000
+ C1       05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                   00254000
+ C1       05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                   00255000
+ C1         05  WS-TRAN-COL-NAME REDEFINES                               00256000
+ C1               WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                   00257000
+ C1       05  WS-TRAN-LAST-NAME             PIC X(15).                   00258000
+ C1       05  WS-TRAN-FIRST-NAME            PIC X(12).                   00259000
+ C1       05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                   00260000
+ C1       05  WS-TRAN-PHONE-NUMBER          PIC X(04).                   00270000
+ C1       05  WS-TRAN-JOBTITLE              PIC X(09).                   00280000
+ C1       05  WS-TRAN-SALARY                PIC 9(5)V99.                 00290000
+ C1       05  WS-TRAN-BONUS                 PIC 9(5)V99.                 00300000
+ C1       05  WS-TRAN-COMM                  PIC 9(5)V99.                 00310000
+ C1       05  FILLER                        PIC X(08).                   00320000
+                                                                         00321000
+ C7     01  WS-EMP-REC.                                                  00330000
+ C7       05  WS-EMP-REC-EMP-NUM           PIC X(6).                     00340000
+ C7       05  WS-EMP-REC-LAST-NAME         PIC X(15).                    00350000
+ C7       05  WS-EMP-REC-FIRST-NAME        PIC X(12).                    00360000
+ C7       05  WS-EMP-REC-MID-IN            PIC X(1).                     00370000
+ C7       05  WS-EMP-REC-DEPT-NUM          PIC X(3).                     00380000
+ C7       05  WS-EMP-REC-JOB-TITLE         PIC X(11).                    00390000
+ C7       05  WS-EMP-REC-EMP-SAL           PIC 9(5)V99.                  00390100
+ C7       05  WS-EMP-REC-EMP-BONUS         PIC 9(5)V99.                  00390200
+ C7       05  WS-EMP-REC-EMP-COMM          PIC 9(5)V99.                  00390300
+                                                                         00391000
+ C9     01  WS-DEPT-REC.                                                 00391100
+ C9       05  WS-DEPT-REC-DEPT-NUM         PIC X(3).                     00391200
+ C9       05  WS-DEPT-REC-DEPT-NAME        PIC X(36).                    00391300
+ C9       05  WS-DEPT-REC-MANAGER-NUM      PIC X(6).                     00391400
+ C9       05  WS-DEPT-REC-ADMIN-CODE       PIC X(3).                     00391500
+ C9       05                               PIC X(32).                    00391600
+                                                                         00392000
+        01 WS-EMP-KSDS-STATUS-CODE            PIC X(02).                 00400000
+ C9     01 WS-DEPT-KSDS-STATUS-CODE           PIC X(02).                 00401000
+        01 WS-CARDIN-STATUS-CODE              PIC X(02).                 00410000
+        01 WS-INPUT-SWITCH                    PIC X(01) VALUE 'Y'.       00420000
+               88 NO-MORE-INPUT       VALUE 'N'.                         00430000
+               88 MORE-INPUT          VALUE 'Y'.                         00440000
+1                                                                                                              PAGE 0016
+ MEMBER NAME  BACKUP11
+                                                                         00441000
+        PROCEDURE DIVISION.                                              00450000
+            DISPLAY '************* START OF PROGRAM VSAMSK01 *****'      00460000
+            OPEN INPUT CARDIN                                            00470000
+       *----- ADD OPEN I-O FOR EMP-KSDS                                  00480000
+ C4         OPEN I-O   EMP-KSDS                                          00481000
+       *----- ADD OPEN I-O FOR DEPT-KSDS                                 00482000
+ C10        OPEN I-O   DEPT-KSDS                                         00483000
+       *----- ADD STATUS CODE CHECKING                                   00490000
+ C5         IF WS-CARDIN-STATUS-CODE = '00'                              00500000
+ C5            CONTINUE                                                  00510000
+ C5         ELSE DISPLAY 'WS-CARDIN-STATUS-CODE='                        00520000
+ C5                    WS-CARDIN-STATUS-CODE                             00530000
+ C5         END-IF                                                       00530100
+                                                                         00531000
+       *---------------- EMP-KSDS STATUS CODE CHECKING---------------    00540100
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00540200
+ C5            CONTINUE                                                  00540300
+ C5         ELSE DISPLAY 'WS-EMP-KSDS-STATUS-CODE='                      00540400
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00540500
+ C5          END-IF                                                      00540700
+                                                                         00540800
+       *---------------- DEPT-KSDS STATUS CODE CHECKING--------------    00540900
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00541000
+ C10           CONTINUE                                                  00541100
+ C10        ELSE DISPLAY 'WS-DEPT-KSDS-STATUS-CODE='                     00541200
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00541300
+ C10         END-IF                                                      00541400
+                                                                         00542000
+             PERFORM 0500-PROCESS-INPUT                                  00550000
+                   UNTIL WS-INPUT-SWITCH = 'N'                           00560000
+                                                                         00561000
+             CLOSE CARDIN                                                00570000
+       *----- ADD CLOSE FOR EMP-KSDS                                     00580000
+ C4          CLOSE EMP-KSDS                                              00581000
+       *----- ADD CLOSE FOR DEPT-KSDS                                    00596000
+ C10         CLOSE DEPT-KSDS                                             00597000
+                                                                         00597100
+ C10   *----- ADD STATUS CODE CHECKING                                   00598000
+             IF WS-CARDIN-STATUS-CODE = '00'                             00598100
+                CONTINUE                                                 00598200
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00598300
+                           WS-CARDIN-STATUS-CODE                         00598400
+             END-IF                                                      00598500
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00598600
+ C5            CONTINUE                                                  00598700
+ C5         ELSE DISPLAY 'WS-EMP-KSDS-STATUS-CODE='                      00598800
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00598900
+ C5          END-IF                                                      00599000
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00599100
+ C10           CONTINUE                                                  00599200
+ C10        ELSE DISPLAY 'WS-DEPT-KSDS-STATUS-CODE='                     00599300
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00599400
+ C10         END-IF                                                      00599500
+             GOBACK                                                      00600000
+             .                                                           00610000
+                                                                         00611000
+         0500-PROCESS-INPUT.                                             00620000
+1                                                                                                              PAGE 0017
+ MEMBER NAME  BACKUP11
+             DISPLAY '0500-PROCESS-INPUT'                                00630000
+             READ CARDIN RECORD INTO WS-IN-BUFFER                        00640000
+                AT END MOVE 'N' TO WS-INPUT-SWITCH                       00650000
+                NOT AT END CONTINUE                                      00660000
+             END-READ                                                    00670000
+                                                                         00680000
+             IF WS-CARDIN-STATUS-CODE = '00'                             00690000
+                CONTINUE                                                 00700000
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00710000
+                           WS-CARDIN-STATUS-CODE                         00720000
+             END-IF                                                      00730000
+             DISPLAY ' '                                                 00740000
+             DISPLAY ' '                                                 00750000
+             DISPLAY '*************************************'             00760000
+             DISPLAY '*************************************'             00770000
+             DISPLAY '*   WS-IN-BUFFER=', WS-IN-BUFFER                   00780000
+             DISPLAY '*************************************'             00790000
+             DISPLAY '*************************************'             00800000
+                                                                         00801000
+             IF MORE-INPUT                                               00810000
+                 EVALUATE WS-TRAN-CODE                                   00820000
+                     WHEN 'L' PERFORM 1000-WS-TRAN-L                     00830000
+                     WHEN 'A' PERFORM 2000-WS-TRAN-A                     00840000
+                     WHEN 'E' PERFORM 3000-WS-TRAN-E                     00850000
+                                 THRU 3000-EXIT                          00851000
+                     WHEN 'I' PERFORM 4000-WS-TRAN-I                     00860000
+                     WHEN 'D' PERFORM 5000-WS-TRAN-D                     00870000
+                     WHEN 'U' PERFORM 6000-WS-TRAN-U                     00880000
+                     WHEN 'Z' PERFORM 7000-WS-TRAN-Z                     00890000
+                     WHEN 'Y' PERFORM 8000-WS-TRAN-Y                     00900000
+                     WHEN 'X' PERFORM 9000-WS-TRAN-X                     00910000
+                     WHEN 'W' PERFORM A000-WS-TRAN-W                     00920000
+                     WHEN 'T' PERFORM B000-WS-TRAN-T                     00930000
+                     WHEN OTHER PERFORM N000-OTHER-TRAN                  00940000
+             END-EVALUATE                                                00950000
+             .                                                           00960000
+        1000-WS-TRAN-L.                                                  00970000
+             DISPLAY '  '                                                00980000
+             DISPLAY '   --------------------------------'               00990000
+             DISPLAY '   ---- PROCESS TRAN CODE L -------'               01000000
+             DISPLAY '   --------------------------------'               01010000
+       *----- ADD KEY READ                                               01020000
+ C8         MOVE CARDIN-EMPNO   TO EMP-KEY                               01020200
+ C8         READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY              01021000
+       *----- ADD STATUS CODE CHECKING .                                 01030000
+ C6         IF WS-EMP-KSDS-STATUS-CODE = '00'                            01031000
+ C6            DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01032000
+ C6         ELSE DISPLAY 'WS-EMP-KSDS-STATUS-CODE='                      01033000
+ C6                       WS-EMP-KSDS-STATUS-CODE                        01034000
+ C6         END-IF                                                       01035000
+             .                                                           01039200
+        2000-WS-TRAN-A.                                                  01040000
+             DISPLAY '  '                                                01050000
+             DISPLAY '    -------------------------------------'         01060000
+             DISPLAY '2000 TRAN CODE A....'                              01070000
+       *-----MOVE LOW-VALUES TO EMP-KEY TO START FROM THE TOP            01071000
+             MOVE LOW-VALUES TO                                          01072000
+                                                                         01073000
+1                                                                                                              PAGE 0018
+ MEMBER NAME  BACKUP11
+                                                                         01074000
+                                                                         01075000
+                                                                         01076000
+                                                                         01077000
+                                                                         01078000
+                                                                         01079000
+                                                                         01079100
+                                                                         01079200
+                                                                         01079300
+                                                                         01079400
+                                                                         01079500
+                                                                         01079600
+                                                                         01079700
+                                                                         01079800
+             .                                                           01080000
+        3000-WS-TRAN-E.                                                  01090000
+ C11   *----- READ EMP-KSDS USING TRAN-EMP-NO AS EMP-KEY                 01091000
+ C11   *----- DEISPLAY EMPLOYEE RECORD IF VALID EMP NUMBER IS FOUND      01091100
+ C11   *----- PERFORM EXIT IF TRAN-EMP-NO DOES'T MATCH ANY EMP-KSDS REC  01092000
+ C11   *----- READ DEPT-KSDS USING EMP-KSDS DEPARTMENT NUMBER            01093000
+ C11   *----- DISPLAY DEPARTMENT RECORD IF VALID RECORD IS FOUND         01094000
+ C11   *----- PERFORM EXIT IF VALID RECORD IS NOT FOUND                  01095000
+             DISPLAY '  '                                                01100000
+             DISPLAY '    -------------------------------------'         01110000
+             DISPLAY '3000 TRAN CODE E....'                              01120000
+ C11        MOVE CARDIN-EMPNO   TO EMP-KEY                               01121000
+ C11        READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY              01122000
+ C11   *----- ADD STATUS CODE CHECKING .                                 01123000
+ C11        IF WS-EMP-KSDS-STATUS-CODE = '00'                            01124000
+ C11           DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01125000
+ C11           MOVE WS-EMP-REC-DEPT-NUM   TO DEPT-KEY                    01125100
+ C11        ELSE DISPLAY 'WS-EMP-KSDS-STATUS-CODE='                      01126000
+ C11                      WS-EMP-KSDS-STATUS-CODE                        01127000
+ C11             GO TO   3000-EXIT                                       01127100
+ C11        END-IF                                                       01128000
+                                                                         01128100
+ C11        READ DEPT-KSDS    INTO WS-DEPT-REC KEY IS DEPT-KEY           01129100
+ C11   *----- ADD STATUS CODE CHECKING .                                 01129200
+ C11        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           01129300
+ C11           DISPLAY 'DEPARTMENT RECORD=' WS-DEPT-REC                  01129400
+ C11        ELSE DISPLAY 'WS-DEPT-KSDS-STATUS-CODE='                     01129600
+ C11                      WS-DEPT-KSDS-STATUS-CODE                       01129700
+ C11             GO TO   3000-EXIT                                       01129800
+ C11        END-IF                                                       01129900
+            .                                                            01130000
+       *----- EXIT PARAGRAPH                                             01130100
+          3000-EXIT.                                                     01130200
+             EXIT                                                        01130300
+             .                                                           01131000
+                                                                         01132000
+        4000-WS-TRAN-I.                                                  01140000
+             DISPLAY '  '                                                01150000
+             DISPLAY '    -------------------------------------'         01160000
+             DISPLAY '4000 TRAN CODE I....'                              01170000
+             .                                                           01180000
+        5000-WS-TRAN-D.                                                  01190000
+             DISPLAY '  '                                                01200000
+             DISPLAY '   ----------------------------------'             01210000
+1                                                                                                              PAGE 0019
+ MEMBER NAME  BACKUP11
+             DISPLAY '5000 TRAN CODE D....'                              01220000
+                 .                                                       01230000
+        6000-WS-TRAN-U.                                                  01240000
+             DISPLAY '  '                                                01250000
+             DISPLAY '   ----------------------------------'             01260000
+             DISPLAY '6000 TRAN CODE U....'                              01270000
+             .                                                           01280000
+        7000-WS-TRAN-Z.                                                  01290000
+             DISPLAY '  '                                                01300000
+             DISPLAY '   ----------------------------------'             01310000
+             DISPLAY '7000 TRAN CODE Z....'                              01320000
+             .                                                           01330000
+        8000-WS-TRAN-Y.                                                  01340000
+             DISPLAY '  '                                                01350000
+             DISPLAY '    -------------------------------------'         01360000
+             DISPLAY '8000 TRAN CODE Y....'                              01370000
+             .                                                           01380000
+        9000-WS-TRAN-X.                                                  01390000
+             DISPLAY '  '                                                01400000
+             DISPLAY '    -------------------------------------'         01410000
+             DISPLAY '9000 TRAN CODE X....'                              01420000
+             .                                                           01430000
+        A000-WS-TRAN-W.                                                  01440000
+             DISPLAY '  '                                                01450000
+             DISPLAY '    -------------------------------------'         01460000
+             DISPLAY 'A000 TRAN CODE W....'                              01470000
+             .                                                           01480000
+        B000-WS-TRAN-T.                                                  01490000
+             DISPLAY '  '                                                01500000
+             DISPLAY '    -------------------------------------'         01510000
+             DISPLAY 'B000 TRAN CODE T....'                              01520000
+             .                                                           01530000
+        N000-OTHER-TRAN.                                                 01540000
+             DISPLAY 'N000 OTHER TRAN ....'                              01550000
+             .                                                           01560000
+1                                                                                                              PAGE 0020
+ MEMBER NAME  INDEX2
+ INDEX FOR COBOL PROGRAM                                                 00010000
+ C1  ADDED NEW IN-BUFFER INTO WORKING STORAGE                            00020006
+ C2  ADDED EMP-KSDS TO FILE CONTROL                                      00030006
+ C3  ADDED EMP-KSDS TO FILE SELECTION                                    00040006
+ C4  ADD OPEN I-O AND CLOSE FOR EMP-KSDS                                 00050006
+ C5  ADD FILE STATUS CHECKING FOR EMP-KSDS                               00060006
+ C6  ADD EMP-KSDS READ STATEMENT AND FILE CHECKING                       00070006
+ C7  ADD EMP-KSDS INDIVIDUAL FIELDS                                      00080006
+ C8  ADD EMP-KSDS READ IN 1000 PARAGRAPH                                 00090006
+ C9  ADD ALL DEPT-FILE INFORMATION                                       00100007
+ C10 ADD DEPT FILE OPEN I-O AND CLOSE                                    00110007
+ C11 ADD DEPT AND EMP FILE READ IN 3000 PARAGRAPH                        00120007
+ C12 LIST ALL EMPLOYEES IN TRAN A DEPARTMENT                             00130008
+ C13 WRITE NEW EMPLYEE FROM CARDIN TO EMP-KSDS                           00140008
+1                                                                                                              PAGE 0021
+ MEMBER NAME  KSDSE
+ //TRAIN05E   JOB (123),'REGGIE CALHOUN',                                00010002
+ //         MSGCLASS=X,CLASS=A,NOTIFY=&SYSUID,TIME=(0,3)                 00020002
+ //********************************************************************  00030002
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)  **********************  00040002
+ //*** I - DD * TO LIST RECORDS                                ********  00050002
+ //*** P - PGM=IDCAMS REPRO TO COPY                                      00060002
+ //*** O - DSN= PRINT CONTENTS INTO &&TEMP DATASET                    *  00070002
+ //********************************************************************  00080002
+ //REPRO EXEC PGM=IDCAMS                                                 00090002
+ //IDIN  DD   DSN=TRAIN05.CLASS.VSAM.EMPDATA,DISP=SHR                    00100002
+ //SYSPRINT DD SYSOUT=*,OUTLIM=1000                                      00110002
+ //SYSIN DD *                                                            00120002
+      DELETE  (TRAIN05.CLASS.VSAM.KSDS.EMP)                              00130002
+      DEFINE  CLUSTER                                 -                  00140002
+              (                                       -                  00150002
+               NAME(TRAIN05.CLASS.VSAM.KSDS.EMP)      -                  00160003
+               RECORDS (100 50 )                      -                  00170002
+               VOLUME(USER07)                         -                  00180004
+               FSPC(20 10 )                           -                  00190002
+               KEYS(6 0)                              -                  00200003
+               RECORDSIZE(80 80)                      -                  00210003
+                                             )                           00220002
+      REPRO   INFILE(IDIN) ODS(TRAIN05.CLASS.VSAM.KSDS.EMP)              00230002
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.EMP) CHAR                      00240002
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.EMP) HEX                       00250002
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.EMP) DUMP                      00260002
+      LISTCAT ENTRY (TRAIN05.CLASS.VSAM.KSDS.EMP) ALL                    00270002
+ /*                                                                      00280002
+ //SYSDUMP DD SYSOUT=*                                                   00290002
+1                                                                                                              PAGE 0022
+ MEMBER NAME  KSDSD
+ //TRAIN05F   JOB (123),'REGGIE CALHOUN',                                00010009
+ //         MSGCLASS=X,CLASS=A,NOTIFY=&SYSUID,TIME=(0,3)                 00020007
+ //********************************************************************  00030000
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)  **********************  00040000
+ //*** I - DD * TO LIST RECORDS                                ********  00050000
+ //*** P - PGM=IDCAMS REPRO TO COPY                                      00060000
+ //*** O - DSN= PRINT CONTENTS INTO &&TEMP DATASET                    *  00070000
+ //********************************************************************  00080000
+ //REPRO EXEC PGM=IDCAMS                                                 00090000
+ //IDIN  DD   DSN=TRAIN00.CLASS.VSAM.DEPTDAT2,DISP=SHR                   00100002
+ //SYSPRINT DD SYSOUT=*,OUTLIM=1000                                      00120000
+ //SYSIN DD *                                                            00130000
+      DELETE  (TRAIN05.CLASS.VSAM.KSDS.DEPT)                             00131003
+      DEFINE  CLUSTER                                 -                  00132003
+              (                                       -                  00133003
+               NAME(TRAIN05.CLASS.VSAM.KSDS.DEPT)     -                  00134003
+               RECORDS (100 50 )                      -                  00135003
+               VOLUME(USER05)                         -                  00136009
+               FSPC(20 10 )                           -                  00137003
+               KEYS(3 0)                              -                  00138003
+               RECORDSIZE(80 80)                      -                  00139003
+                                             )                           00139103
+      REPRO   INFILE(IDIN) ODS(TRAIN05.CLASS.VSAM.KSDS.DEPT)             00140003
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.DEPT) CHAR                     00160003
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.DEPT) HEX                      00161003
+      PRINT   IDS(TRAIN05.CLASS.VSAM.KSDS.DEPT) DUMP                     00162003
+      LISTCAT ENTRY (TRAIN05.CLASS.VSAM.KSDS.DEPT) ALL                   00163003
+ /*                                                                      00170000
+ //SYSDUMP DD SYSOUT=*                                                   00180000
+1                                                                                                              PAGE 0023
+ MEMBER NAME  BACKUP12
+        IDENTIFICATION DIVISION.                                         00010000
+       *-----------------------                                          00020000
+        PROGRAM-ID.       VSAMSK01.                                      00030000
+       ***************************************************************** 00031000
+       ***********    CHANGE LOG   ************************************* 00032000
+       *---------------------------------------------------------------* 00033000
+       ** CHANGE NUMBER    DATE      DESCIPTION                        * 00034000
+       *---------------------------------------------------------------* 00035000
+       *    NONE          10-23      ORIGINAL CODE                       00036000
+ CNN   *    CNN    IN COLUMNS 1-3                                        00037000
+ C1    *    C1  11-30 ADD NEW IN-BUFFER INTO WORKING STORAGE             00038000
+ C2    *    C2  11-30 ADD EMP-KSDS INTO FILE CONTROL                     00039000
+ C3    *    C3  11-30 ADD EMP-KSDS INTO FILE DEFINITION                  00039100
+ C4    *    C4  12-05 ADD OPEN I-O AND CLOSE FOR EMP-KSDS                00039200
+ C5    *    C5  12-05 ADD FILE STATUS CHECKING FOR EMP-KSDS              00039300
+ C6    *    C6  12-06 ADD EMP-KSDS READ STATEMENT AND FILE CHECKING      00039400
+ C7    *    C7  12-07 ADD EMP-KSDS INDIVIDUAL FIELDS                     00039500
+ C8    *    C8  12-07 ADD EMP-KSDS READ IN 1000 PARAGRAPH                00039600
+ C9    *    C9  12-11 ADD ALL DEPT-FILE INFORMATION                      00039800
+ C10   *    C10 12-11 ADD DEPT FILE OPEN I-O AND CLOSE                   00039900
+ C11   *    C11 12-11 ADD DEPT AND EMP FILE READ IN 3000 PARAGRAPH       00040000
+ C12   *    C12 12-13 LIST ALL EMPLOYEES IN TRAN A DEPARTMENT            00040100
+ C13   *    C13 12-13 WRITE NEW EMPLYEE FROM CARDIN TO EMP-KSDS          00040200
+       ***************************************************************** 00040700
+       *******  PROGRAM STRUCTURE    *********************************** 00040800
+       ***************************************************************** 00040900
+       *** 0000-MAIN.                                                    00041000
+       *** 1000-PROCESS-TRAN-FILE                                        00041100
+       ***     OPEN TRAN-FILE                                            00041200
+       ***         1100-PROCESS-TRAN-REC                                 00041300
+       ***     CLOSE TRAN-FILE                                           00041400
+       *** 1110-PROCESS-TRAN-REC-DETAILS                                 00041500
+       ***************************************************************** 00041600
+        ENVIRONMENT DIVISION.                                            00042000
+       *--------------------                                             00050000
+        CONFIGURATION SECTION.                                           00060000
+        INPUT-OUTPUT SECTION.                                            00070000
+        FILE-CONTROL.                                                    00080000
+            SELECT CARDIN           ASSIGN TO CARDIN                     00090000
+                 FILE STATUS IS WS-CARDIN-STATUS-CODE.                   00100000
+       *----- ADD SELECT FOR EMP-KSDS 5 LINES                            00110000
+ C2         SELECT EMP-KSDS   ASSIGN TO EMPFILE                          00111000
+ C2                ORGANIZATION      IS INDEXED                          00112000
+ C2                ACCESS MODE       IS DYNAMIC                          00113000
+ C2                RECORD KEY        IS EMP-KEY                          00114000
+ C2                FILE STATUS       IS WS-EMP-KSDS-STATUS-CODE.         00115000
+ C9    *----- ADD SELECT FOR DEPT-KSDS 5 LINES                           00115100
+ C9         SELECT DEPT-KSDS  ASSIGN TO DEPTFILE                         00116000
+ C9                ORGANIZATION      IS INDEXED                          00117000
+ C9                ACCESS MODE       IS DYNAMIC                          00118000
+ C9                RECORD KEY        IS DEPT-KEY                         00119000
+ C9                FILE STATUS       IS WS-DEPT-KSDS-STATUS-CODE.        00119100
+        DATA DIVISION.                                                   00120000
+        FILE SECTION.                                                    00130000
+        FD  CARDIN                                                       00140000
+            RECORD CONTAINS 80 CHARACTERS                                00150000
+            RECORDING MODE IS F                                          00160000
+            BLOCK CONTAINS 0 RECORDS.                                    00170000
+1                                                                                                              PAGE 0024
+ MEMBER NAME  BACKUP12
+        01 CARDREC.                                                      00180000
+           05  CARDIN-TRAN-CODE              PIC X(01).                  00190000
+           05  CARDIN-EMPNO                  PIC X(06).                  00200000
+           05                                PIC X(73).                  00210000
+       *----- ADD FD AND 01 (WITH EMP-KEY) FOR EMP KSDS                  00220000
+ C3     FD  EMP-KSDS                                                     00221000
+ C3         RECORD CONTAINS 80 CHARACTERS.                               00222000
+ C3     01  EMP-REC.                                                     00223000
+ C3         05  EMP-KEY                        PIC X(06).                00224000
+ C3         05                                 PIC X(74).                00225000
+       *----- ADD FD AND 01 (WITH DEPT-KEY) FOR DEPT-KSDS                00226000
+ C9     FD  DEPT-KSDS                                                    00227000
+ C9         RECORD CONTAINS 80 CHARACTERS.                               00228000
+ C9     01  DEPT-REC.                                                    00229000
+ C9         05  DEPT-KEY                       PIC X(03).                00229100
+ C9         05                                 PIC X(77).                00229200
+        WORKING-STORAGE SECTION.                                         00230000
+        01 WS-OUTPUT-BUFFER.                                             00240000
+           05  WS-OUTPUT-BUFFER-REC            PIC X(132).               00250000
+                                                                         00251000
+ C1     01  WS-IN-BUFFER.                                                00252000
+ C1       05  WS-TRAN-CODE                  PIC X(01).                   00253000
+ C1       05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                   00254000
+ C1       05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                   00255000
+ C1         05  WS-TRAN-COL-NAME REDEFINES                               00256000
+ C1               WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                   00257000
+ C1       05  WS-TRAN-LAST-NAME             PIC X(15).                   00258000
+ C1       05  WS-TRAN-FIRST-NAME            PIC X(12).                   00259000
+ C1       05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                   00260000
+ C1       05  WS-TRAN-PHONE-NUMBER          PIC X(04).                   00270000
+ C1       05  WS-TRAN-JOBTITLE              PIC X(09).                   00280000
+ C1       05  WS-TRAN-SALARY                PIC 9(5)V99.                 00290000
+ C1       05  WS-TRAN-BONUS                 PIC 9(5)V99.                 00300000
+ C1       05  WS-TRAN-COMM                  PIC 9(5)V99.                 00310000
+ C1       05  FILLER                        PIC X(08).                   00320000
+                                                                         00321000
+ C7     01  WS-EMP-REC.                                                  00330000
+ C7       05  WS-EMP-REC-EMP-NUM           PIC X(6).                     00340000
+ C7       05  WS-EMP-REC-LAST-NAME         PIC X(15).                    00350000
+ C7       05  WS-EMP-REC-FIRST-NAME        PIC X(12).                    00360000
+ C7       05  WS-EMP-REC-MID-IN            PIC X(1).                     00370000
+ C7       05  WS-EMP-REC-DEPT-NUM          PIC X(3).                     00380000
+ C7       05  WS-EMP-REC-JOB-TITLE         PIC X(11).                    00390000
+ C7       05  WS-EMP-REC-EMP-SAL           PIC 9(5)V99.                  00390100
+ C7       05  WS-EMP-REC-EMP-BONUS         PIC 9(5)V99.                  00390200
+ C7       05  WS-EMP-REC-EMP-COMM          PIC 9(5)V99.                  00390300
+                                                                         00391000
+ C9     01  WS-DEPT-REC.                                                 00391100
+ C9       05  WS-DEPT-REC-DEPT-NUM         PIC X(3).                     00391200
+ C9       05  WS-DEPT-REC-DEPT-NAME        PIC X(36).                    00391300
+ C9       05  WS-DEPT-REC-MANAGER-NUM      PIC X(6).                     00391400
+ C9       05  WS-DEPT-REC-ADMIN-CODE       PIC X(3).                     00391500
+ C9       05                               PIC X(32).                    00391600
+                                                                         00392000
+        01 WS-EMP-KSDS-STATUS-CODE            PIC X(02).                 00400000
+ C9     01 WS-DEPT-KSDS-STATUS-CODE           PIC X(02).                 00401000
+        01 WS-CARDIN-STATUS-CODE              PIC X(02).                 00410000
+        01 WS-INPUT-SWITCH                    PIC X(01) VALUE 'Y'.       00420000
+1                                                                                                              PAGE 0025
+ MEMBER NAME  BACKUP12
+               88 NO-MORE-INPUT       VALUE 'N'.                         00430000
+               88 MORE-INPUT          VALUE 'Y'.                         00440000
+                                                                         00441000
+        PROCEDURE DIVISION.                                              00450000
+            DISPLAY '************* START OF PROGRAM VSAMSK01 *****'      00460000
+            OPEN INPUT CARDIN                                            00470000
+       *----- ADD OPEN I-O FOR EMP-KSDS                                  00480000
+ C4         OPEN I-O   EMP-KSDS                                          00481000
+       *----- ADD OPEN I-O FOR DEPT-KSDS                                 00482000
+ C10        OPEN I-O   DEPT-KSDS                                         00483000
+       *----- ADD STATUS CODE CHECKING                                   00490000
+ C5         IF WS-CARDIN-STATUS-CODE = '00'                              00500000
+ C5            CONTINUE                                                  00510000
+ C5         ELSE DISPLAY 'WS-CARDIN-STATUS-CODE='                        00520000
+ C5                    WS-CARDIN-STATUS-CODE                             00530000
+ C5         END-IF                                                       00530100
+                                                                         00531000
+       *---------------- EMP-KSDS STATUS CODE CHECKING---------------    00540100
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00540200
+ C5            CONTINUE                                                  00540300
+ C5         ELSE DISPLAY 'OPEN-WS-EMP-KSDS-STATUS-CODE='                 00540400
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00540500
+ C5          END-IF                                                      00540700
+                                                                         00540800
+       *---------------- DEPT-KSDS STATUS CODE CHECKING--------------    00540900
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00541000
+ C10           CONTINUE                                                  00541100
+ C10        ELSE DISPLAY 'OPEN-WS-DEPT-KSDS-STATUS-CODE='                00541200
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00541300
+ C10         END-IF                                                      00541400
+                                                                         00542000
+             PERFORM 0500-PROCESS-INPUT                                  00550000
+                   UNTIL WS-INPUT-SWITCH = 'N'                           00560000
+                                                                         00561000
+             CLOSE CARDIN                                                00570000
+       *----- ADD CLOSE FOR EMP-KSDS                                     00580000
+ C4          CLOSE EMP-KSDS                                              00581000
+       *----- ADD CLOSE FOR DEPT-KSDS                                    00596000
+ C10         CLOSE DEPT-KSDS                                             00597000
+                                                                         00597100
+ C10   *----- ADD STATUS CODE CHECKING                                   00598000
+             IF WS-CARDIN-STATUS-CODE = '00'                             00598100
+                CONTINUE                                                 00598200
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00598300
+                           WS-CARDIN-STATUS-CODE                         00598400
+             END-IF                                                      00598500
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00598600
+ C5            CONTINUE                                                  00598700
+ C5         ELSE DISPLAY 'CLOSE-WS-EMP-KSDS-STATUS-CODE='                00598800
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00598900
+ C5          END-IF                                                      00599000
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00599100
+ C10           CONTINUE                                                  00599200
+ C10        ELSE DISPLAY 'CLOSE-WS-DEPT-KSDS-STATUS-CODE='               00599300
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00599400
+ C10         END-IF                                                      00599500
+             .                                                           00599600
+        0000-MAIN.                                                       00599700
+1                                                                                                              PAGE 0026
+ MEMBER NAME  BACKUP12
+             GOBACK                                                      00600000
+             .                                                           00610000
+                                                                         00611000
+         0500-PROCESS-INPUT.                                             00620000
+             DISPLAY '0500-PROCESS-INPUT'                                00630000
+             READ CARDIN RECORD INTO WS-IN-BUFFER                        00640000
+                AT END MOVE 'N' TO WS-INPUT-SWITCH                       00650000
+                NOT AT END CONTINUE                                      00660000
+             END-READ                                                    00670000
+                                                                         00680000
+             IF WS-CARDIN-STATUS-CODE = '00'                             00690000
+                CONTINUE                                                 00700000
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00710000
+                           WS-CARDIN-STATUS-CODE                         00720000
+             END-IF                                                      00730000
+             DISPLAY ' '                                                 00740000
+             DISPLAY ' '                                                 00750000
+             DISPLAY '*************************************'             00760000
+             DISPLAY '*************************************'             00770000
+             DISPLAY '*   WS-IN-BUFFER=', WS-IN-BUFFER                   00780000
+             DISPLAY '*************************************'             00790000
+             DISPLAY '*************************************'             00800000
+                                                                         00801000
+             IF MORE-INPUT                                               00810000
+                 EVALUATE WS-TRAN-CODE                                   00820000
+                     WHEN 'L' PERFORM 1000-WS-TRAN-L                     00830000
+                     WHEN 'A' PERFORM 2000-WS-TRAN-A                     00840000
+                     WHEN 'E' PERFORM 3000-WS-TRAN-E                     00850000
+                                 THRU 3000-EXIT                          00851000
+                     WHEN 'I' PERFORM 4000-WS-TRAN-I                     00860000
+                     WHEN 'D' PERFORM 5000-WS-TRAN-D                     00870000
+                     WHEN 'U' PERFORM 6000-WS-TRAN-U                     00880000
+                     WHEN 'Z' PERFORM 7000-WS-TRAN-Z                     00890000
+                     WHEN 'Y' PERFORM 8000-WS-TRAN-Y                     00900000
+                     WHEN 'X' PERFORM 9000-WS-TRAN-X                     00910000
+                     WHEN 'W' PERFORM A000-WS-TRAN-W                     00920000
+                     WHEN 'T' PERFORM B000-WS-TRAN-T                     00930000
+                     WHEN OTHER PERFORM N000-OTHER-TRAN                  00940000
+             END-EVALUATE                                                00950000
+             .                                                           00960000
+        1000-WS-TRAN-L.                                                  00970000
+             DISPLAY '  '                                                00980000
+             DISPLAY '   --------------------------------'               00990000
+             DISPLAY '   ---- PROCESS TRAN CODE L -------'               01000000
+             DISPLAY '   --------------------------------'               01010000
+       *----- ADD KEY READ                                               01020000
+ C8          MOVE CARDIN-EMPNO   TO EMP-KEY                              01020200
+ C8          READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY             01021000
+       *----- ADD STATUS CODE CHECKING .                                 01030000
+ C6          IF WS-EMP-KSDS-STATUS-CODE = '00'                           01031000
+ C6            DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01032000
+ C6          ELSE DISPLAY '1000-READ-WS-EMP-KSDS-STATUS-CODE='           01033000
+ C6                       WS-EMP-KSDS-STATUS-CODE                        01034000
+ C6          END-IF                                                      01035000
+             .                                                           01039200
+        2000-WS-TRAN-A.                                                  01040000
+             DISPLAY '  '                                                01050000
+             DISPLAY '    -------------------------------------'         01060000
+1                                                                                                              PAGE 0027
+ MEMBER NAME  BACKUP12
+             DISPLAY '2000 TRAN CODE A....'                              01070000
+       *???--MOVE LOW-VALUES TO EMP-KEY TO START FROM THE TOP            01071000
+             MOVE   LOW-VALUES          TO EMP-KEY                       01072000
+             START EMP-KSDS       KEY IS > EMP-KEY                       01073000
+             IF WS-EMP-KSDS-STATUS-CODE  =  '00'                         01074000
+                CONTINUE                                                 01074100
+             ELSE DISPLAY 'START ERROR   -   WS-EMP-KSDS-STATUS-CODE'    01075000
+                           WS-EMP-KSDS-STATUS-CODE                       01076000
+             END-IF                                                      01077000
+                  DISPLAY 'WS-TRAN-DEPARTMENT-NUMBER='                   01078000
+                           WS-TRAN-DEPARTMENT-NUMBER                     01078100
+                  DISPLAY 'WS-EMP-REC-DEPT-NUM='                         01078200
+                           WS-EMP-REC-DEPT-NUM                           01078300
+             MOVE 'OO'     TO WS-EMP-KSDS-STATUS-CODE                    01078400
+             PERFORM UNTIL WS-EMP-KSDS-STATUS-CODE NOT EQUAL '00'        01078500
+                 READ EMP-KSDS NEXT INTO WS-EMP-REC                      01079200
+                 IF WS-EMP-KSDS-STATUS-CODE EQUAL TO '00'                01079800
+                   AND WS-TRAN-DEPARTMENT-NUMBER = WS-EMP-REC-DEPT-NUM   01079900
+                 THEN DISPLAY 'WS-EMP-REC=' WS-EMP-REC                   01080000
+                 ELSE IF WS-EMP-KSDS-STATUS-CODE = '10'                  01080100
+                         DISPLAY '---- END OF EMP RECORDS ----'          01080200
+                 END-IF                                                  01080300
+                 END-IF                                                  01080400
+                 IF WS-EMP-KSDS-STATUS-CODE NOT = '00' AND NOT = '10'    01080500
+                    DISPLAY 'END-IF-READ NEXT ERROR STATUS CODE='        01080600
+                             WS-EMP-KSDS-STATUS-CODE                     01080700
+                 END-IF                                                  01080800
+             END-PERFORM                                                 01080900
+             .                                                           01081000
+        3000-WS-TRAN-E.                                                  01090000
+ C11   *----- READ EMP-KSDS USING TRAN-EMP-NO AS EMP-KEY                 01091000
+ C11   *----- DEISPLAY EMPLOYEE RECORD IF VALID EMP NUMBER IS FOUND      01091100
+ C11   *----- PERFORM EXIT IF TRAN-EMP-NO DOES'T MATCH ANY EMP-KSDS REC  01092000
+ C11   *----- READ DEPT-KSDS USING EMP-KSDS DEPARTMENT NUMBER            01093000
+ C11   *----- DISPLAY DEPARTMENT RECORD IF VALID RECORD IS FOUND         01094000
+ C11   *----- PERFORM EXIT IF VALID RECORD IS NOT FOUND                  01095000
+             DISPLAY '  '                                                01100000
+             DISPLAY '    -------------------------------------'         01110000
+             DISPLAY '3000 TRAN CODE E....'                              01120000
+ C11        MOVE CARDIN-EMPNO   TO EMP-KEY                               01121000
+ C11        READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY              01122000
+ C11   *----- ADD STATUS CODE CHECKING .                                 01123000
+ C11        IF WS-EMP-KSDS-STATUS-CODE = '00'                            01124000
+ C11           DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01125000
+ C11           MOVE WS-EMP-REC-DEPT-NUM   TO DEPT-KEY                    01125100
+ C11        ELSE DISPLAY '3000-READ-WS-EMP-KSDS-STATUS-CODE='            01126000
+ C11                      WS-EMP-KSDS-STATUS-CODE                        01127000
+ C11   *----     PERFORM 3000-EXIT                                       01127100
+ C11        END-IF                                                       01128000
+                                                                         01128100
+ C11        READ DEPT-KSDS    INTO WS-DEPT-REC KEY IS DEPT-KEY           01129100
+ C11   *----- ADD STATUS CODE CHECKING .                                 01129200
+ C11        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           01129300
+ C11           DISPLAY 'DEPARTMENT RECORD=' WS-DEPT-REC                  01129400
+ C11        ELSE DISPLAY '3000-READ-WS-DEPT-KSDS-STATUS-CODE='           01129600
+ C11                      WS-DEPT-KSDS-STATUS-CODE                       01129700
+ C11   *-----    PERFORM 3000-EXIT                                       01129800
+ C11        END-IF                                                       01129900
+1                                                                                                              PAGE 0028
+ MEMBER NAME  BACKUP12
+            .                                                            01130000
+       *----- EXIT PARAGRAPH                                             01130100
+          3000-EXIT.                                                     01130200
+             EXIT                                                        01130300
+             .                                                           01131000
+                                                                         01132000
+        4000-WS-TRAN-I.                                                  01140000
+             DISPLAY '  '                                                01150000
+             DISPLAY '    -------------------------------------'         01160000
+             DISPLAY '4000 TRAN CODE I....'                              01170000
+                                                                         01171000
+                                                                         01172000
+                                                                         01173000
+                                                                         01174000
+                                                                         01175000
+                                                                         01176000
+                                                                         01177000
+                                                                         01178000
+                                                                         01179000
+                                                                         01179100
+                                                                         01179200
+                                                                         01179300
+                                                                         01179400
+                                                                         01179500
+                                                                         01179600
+                                                                         01179700
+                                                                         01179800
+                                                                         01179900
+             .                                                           01180000
+        5000-WS-TRAN-D.                                                  01190000
+             DISPLAY '  '                                                01200000
+             DISPLAY '   ----------------------------------'             01210000
+             DISPLAY '5000 TRAN CODE D....'                              01220000
+                 .                                                       01230000
+        6000-WS-TRAN-U.                                                  01240000
+             DISPLAY '  '                                                01250000
+             DISPLAY '   ----------------------------------'             01260000
+             DISPLAY '6000 TRAN CODE U....'                              01270000
+             .                                                           01280000
+        7000-WS-TRAN-Z.                                                  01290000
+             DISPLAY '  '                                                01300000
+             DISPLAY '   ----------------------------------'             01310000
+             DISPLAY '7000 TRAN CODE Z....'                              01320000
+             .                                                           01330000
+        8000-WS-TRAN-Y.                                                  01340000
+             DISPLAY '  '                                                01350000
+             DISPLAY '    -------------------------------------'         01360000
+             DISPLAY '8000 TRAN CODE Y....'                              01370000
+             .                                                           01380000
+        9000-WS-TRAN-X.                                                  01390000
+             DISPLAY '  '                                                01400000
+             DISPLAY '    -------------------------------------'         01410000
+             DISPLAY '9000 TRAN CODE X....'                              01420000
+             .                                                           01430000
+        A000-WS-TRAN-W.                                                  01440000
+             DISPLAY '  '                                                01450000
+             DISPLAY '    -------------------------------------'         01460000
+             DISPLAY 'A000 TRAN CODE W....'                              01470000
+1                                                                                                              PAGE 0029
+ MEMBER NAME  BACKUP12
+             .                                                           01480000
+        B000-WS-TRAN-T.                                                  01490000
+             DISPLAY '  '                                                01500000
+             DISPLAY '    -------------------------------------'         01510000
+             DISPLAY 'B000 TRAN CODE T....'                              01520000
+             .                                                           01530000
+        N000-OTHER-TRAN.                                                 01540000
+             DISPLAY 'N000 OTHER TRAN ....'                              01550000
+             .                                                           01560000
+1                                                                                                              PAGE 0030
+ MEMBER NAME  COMPILEV
+ //TRAIN05V JOB ,,CLASS=A,NOTIFY=&SYSUID,TIME=(0,2)               <CHG   00010005
+ //   JCLLIB ORDER=(TRAIN00.CLASS.COBOL)                                 00020000
+ //STEP1        EXEC IGYWCLG,LIBPRFX=CEE,PARM.COBOL='LIST,MAP'           00030000
+ //**************************************************************        00040000
+ //**************************************************************        00050000
+ //****  CHANGE TRAIN00 TO YOUR TSOID   FOR THE NEXT 3 DSNS              00060000
+ //****    AND CHANGE THE JOBNAME  AND THE TRANFILE DSN  ********        00070000
+ //**************************************************************        00080000
+ //**************************************************************        00090000
+ //COBOL.SYSIN   DD  DSN=TRAIN05.CLASS.VSAM(VSAMSKEL),DISP=SHR     <CHG  00100002
+ //LKED.SYSLMOD  DD  DSNAME=TRAIN05.CLASS.LOADLIB(COBSKEL),DISP=SHR <CHG 00110001
+ //GO.STEPLIB    DD  DSNAME=TRAIN05.CLASS.LOADLIB,DISP=SHR          <CHG 00120000
+ //**************************************************************        00130000
+ //**************************************************************        00140000
+ //GO.SYSOUT     DD  SYSOUT=*,OUTLIM=1000                                00150000
+ //GO.CARDIN     DD  DSN=TRAIN05.CLASS.VSAM.TRANS,DISP=SHR               00160000
+ //GO.EMPFILE    DD  DSN=TRAIN05.CLASS.VSAM.KSDS.EMP,DISP=SHR            00170000
+ //GO.DEPTFILE   DD  DSN=TRAIN05.CLASS.VSAM.KSDS.DEPT,DISP=SHR           00180003
+1                                                                                                              PAGE 0031
+ MEMBER NAME  VSAMSKEL
+        IDENTIFICATION DIVISION.                                         00010000
+       *-----------------------                                          00020000
+        PROGRAM-ID.       VSAMSK01.                                      00030000
+       ***************************************************************** 00031000
+       ***********    CHANGE LOG   ************************************* 00032000
+       *---------------------------------------------------------------* 00033000
+       ** CHANGE NUMBER    DATE      DESCIPTION                        * 00034000
+       *---------------------------------------------------------------* 00035000
+       *    NONE          10-23      ORIGINAL CODE                       00036000
+ CNN   *    CNN    IN COLUMNS 1-3                                        00037000
+ C1    *    C1  11-30 ADD NEW IN-BUFFER INTO WORKING STORAGE             00038017
+ C2    *    C2  11-30 ADD EMP-KSDS INTO FILE CONTROL                     00039017
+ C3    *    C3  11-30 ADD EMP-KSDS INTO FILE DEFINITION                  00039117
+ C4    *    C4  12-05 ADD OPEN I-O AND CLOSE FOR EMP-KSDS                00039213
+ C5    *    C5  12-05 ADD FILE STATUS CHECKING FOR EMP-KSDS              00039313
+ C6    *    C6  12-06 ADD EMP-KSDS READ STATEMENT AND FILE CHECKING      00039413
+ C7    *    C7  12-07 ADD EMP-KSDS INDIVIDUAL FIELDS                     00039516
+ C8    *    C8  12-07 ADD EMP-KSDS READ IN 1000 PARAGRAPH                00039616
+ C9    *    C9  12-11 ADD ALL DEPT-FILE INFORMATION                      00039822
+ C10   *    C10 12-11 ADD DEPT FILE OPEN I-O AND CLOSE                   00039922
+ C11   *    C11 12-11 ADD DEPT AND EMP FILE READ IN 3000 PARAGRAPH       00040028
+ C12   *    C12 12-13 LIST ALL EMPLOYEES IN TRAN A DEPARTMENT            00040141
+ C13   *    C13 12-13 WRITE NEW EMPLYEE FROM CARDIN TO EMP-KSDS          00040241
+       ***************************************************************** 00040717
+       *******  PROGRAM STRUCTURE    *********************************** 00040817
+       ***************************************************************** 00040917
+       *** 0000-MAIN.                                                    00041017
+       *** 1000-PROCESS-TRAN-FILE                                        00041117
+       ***     OPEN TRAN-FILE                                            00041217
+       ***         1100-PROCESS-TRAN-REC                                 00041317
+       ***     CLOSE TRAN-FILE                                           00041417
+       *** 1110-PROCESS-TRAN-REC-DETAILS                                 00041517
+       ***************************************************************** 00041617
+        ENVIRONMENT DIVISION.                                            00042017
+       *--------------------                                             00050000
+        CONFIGURATION SECTION.                                           00060000
+        INPUT-OUTPUT SECTION.                                            00070000
+        FILE-CONTROL.                                                    00080000
+            SELECT CARDIN           ASSIGN TO CARDIN                     00090000
+                 FILE STATUS IS WS-CARDIN-STATUS-CODE.                   00100000
+       *----- ADD SELECT FOR EMP-KSDS 5 LINES                            00110000
+ C2         SELECT EMP-KSDS   ASSIGN TO EMPFILE                          00111000
+ C2                ORGANIZATION      IS INDEXED                          00112000
+ C2                ACCESS MODE       IS DYNAMIC                          00113000
+ C2                RECORD KEY        IS EMP-KEY                          00114014
+ C2                FILE STATUS       IS WS-EMP-KSDS-STATUS-CODE.         00115003
+ C9    *----- ADD SELECT FOR DEPT-KSDS 5 LINES                           00115122
+ C9         SELECT DEPT-KSDS  ASSIGN TO DEPTFILE                         00116026
+ C9                ORGANIZATION      IS INDEXED                          00117021
+ C9                ACCESS MODE       IS DYNAMIC                          00118021
+ C9                RECORD KEY        IS DEPT-KEY                         00119022
+ C9                FILE STATUS       IS WS-DEPT-KSDS-STATUS-CODE.        00119122
+        DATA DIVISION.                                                   00120000
+        FILE SECTION.                                                    00130000
+        FD  CARDIN                                                       00140000
+            RECORD CONTAINS 80 CHARACTERS                                00150000
+            RECORDING MODE IS F                                          00160000
+            BLOCK CONTAINS 0 RECORDS.                                    00170000
+1                                                                                                              PAGE 0032
+ MEMBER NAME  VSAMSKEL
+        01 CARDREC.                                                      00180000
+           05  CARDIN-TRAN-CODE              PIC X(01).                  00190000
+           05  CARDIN-EMPNO                  PIC X(06).                  00200000
+           05                                PIC X(73).                  00210000
+       *----- ADD FD AND 01 (WITH EMP-KEY) FOR EMP KSDS                  00220000
+ C3     FD  EMP-KSDS                                                     00221000
+ C3         RECORD CONTAINS 80 CHARACTERS.                               00222003
+ C3     01  EMP-REC.                                                     00223000
+ C3         05  EMP-KEY                        PIC X(06).                00224014
+ C3         05                                 PIC X(74).                00225000
+       *----- ADD FD AND 01 (WITH DEPT-KEY) FOR DEPT-KSDS                00226022
+ C9     FD  DEPT-KSDS                                                    00227022
+ C9         RECORD CONTAINS 80 CHARACTERS.                               00228021
+ C9     01  DEPT-REC.                                                    00229022
+ C9         05  DEPT-KEY                       PIC X(03).                00229127
+ C9         05                                 PIC X(77).                00229227
+        WORKING-STORAGE SECTION.                                         00230000
+        01 WS-OUTPUT-BUFFER.                                             00240000
+           05  WS-OUTPUT-BUFFER-REC            PIC X(132).               00250012
+                                                                         00251010
+ C1     01  WS-IN-BUFFER.                                                00252000
+ C1       05  WS-TRAN-CODE                  PIC X(01).                   00253029
+ C1       05  WS-TRAN-EMPLOYEE-NUMBER       PIC X(06).                   00254029
+ C1       05  WS-TRAN-DEPARTMENT-NUMBER     PIC X(03).                   00255029
+ C1         05  WS-TRAN-COL-NAME REDEFINES                               00256029
+ C1               WS-TRAN-DEPARTMENT-NUMBER PIC X(03).                   00257029
+ C1       05  WS-TRAN-LAST-NAME             PIC X(15).                   00258029
+ C1       05  WS-TRAN-FIRST-NAME            PIC X(12).                   00259029
+ C1       05  WS-TRAN-MIDDLE-INITIAL        PIC X(01).                   00260029
+ C1       05  WS-TRAN-PHONE-NUMBER          PIC X(04).                   00270029
+ C1       05  WS-TRAN-JOBTITLE              PIC X(09).                   00280029
+ C1       05  WS-TRAN-SALARY                PIC 9(5)V99.                 00290029
+ C1       05  WS-TRAN-BONUS                 PIC 9(5)V99.                 00300029
+ C1       05  WS-TRAN-COMM                  PIC 9(5)V99.                 00310029
+ C1       05  FILLER                        PIC X(08).                   00320029
+                                                                         00321014
+ C7     01  WS-EMP-REC.                                                  00330014
+ C7       05  WS-EMP-REC-EMP-NUM           PIC X(6).                     00340029
+ C7       05  WS-EMP-REC-LAST-NAME         PIC X(15).                    00350029
+ C7       05  WS-EMP-REC-FIRST-NAME        PIC X(12).                    00360029
+ C7       05  WS-EMP-REC-MID-IN            PIC X(1).                     00370029
+ C7       05  WS-EMP-REC-DEPT-NUM          PIC X(3).                     00380029
+ C7       05  WS-EMP-REC-JOB-TITLE         PIC X(11).                    00390029
+ C7       05  WS-EMP-REC-EMP-SAL           PIC 9(5)V99.                  00390129
+ C7       05  WS-EMP-REC-EMP-BONUS         PIC 9(5)V99.                  00390229
+ C7       05  WS-EMP-REC-EMP-COMM          PIC 9(5)V99.                  00390329
+                                                                         00391000
+ C9     01  WS-DEPT-REC.                                                 00391122
+ C9       05  WS-DEPT-REC-DEPT-NUM         PIC X(3).                     00391222
+ C9       05  WS-DEPT-REC-DEPT-NAME        PIC X(36).                    00391322
+ C9       05  WS-DEPT-REC-MANAGER-NUM      PIC X(6).                     00391422
+ C9       05  WS-DEPT-REC-ADMIN-CODE       PIC X(3).                     00391522
+ C9       05                               PIC X(32).                    00391621
+                                                                         00392021
+        01 WS-EMP-KSDS-STATUS-CODE            PIC X(02).                 00400003
+ C9     01 WS-DEPT-KSDS-STATUS-CODE           PIC X(02).                 00401022
+        01 WS-CARDIN-STATUS-CODE              PIC X(02).                 00410000
+        01 WS-INPUT-SWITCH                    PIC X(01) VALUE 'Y'.       00420000
+1                                                                                                              PAGE 0033
+ MEMBER NAME  VSAMSKEL
+               88 NO-MORE-INPUT       VALUE 'N'.                         00430000
+               88 MORE-INPUT          VALUE 'Y'.                         00440000
+                                                                         00441000
+        PROCEDURE DIVISION.                                              00450000
+            DISPLAY '************* START OF PROGRAM VSAMSK01 *****'      00460000
+            OPEN INPUT CARDIN                                            00470000
+       *----- ADD OPEN I-O FOR EMP-KSDS                                  00480000
+ C4         OPEN I-O   EMP-KSDS                                          00481013
+       *----- ADD OPEN I-O FOR DEPT-KSDS                                 00482022
+ C10        OPEN I-O   DEPT-KSDS                                         00483022
+       *----- ADD STATUS CODE CHECKING                                   00490000
+ C5         IF WS-CARDIN-STATUS-CODE = '00'                              00500013
+ C5            CONTINUE                                                  00510013
+ C5         ELSE DISPLAY 'WS-CARDIN-STATUS-CODE='                        00520013
+ C5                    WS-CARDIN-STATUS-CODE                             00530013
+ C5         END-IF                                                       00530113
+                                                                         00531013
+       *---------------- EMP-KSDS STATUS CODE CHECKING---------------    00540100
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00540213
+ C5            CONTINUE                                                  00540313
+ C5         ELSE DISPLAY 'OPEN-WS-EMP-KSDS-STATUS-CODE='                 00540452
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00540513
+ C5          END-IF                                                      00540713
+                                                                         00540821
+       *---------------- DEPT-KSDS STATUS CODE CHECKING--------------    00540926
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00541022
+ C10           CONTINUE                                                  00541121
+ C10        ELSE DISPLAY 'OPEN-WS-DEPT-KSDS-STATUS-CODE='                00541252
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00541322
+ C10         END-IF                                                      00541421
+                                                                         00542021
+             PERFORM 0500-PROCESS-INPUT                                  00550000
+                   UNTIL WS-INPUT-SWITCH = 'N'                           00560000
+                                                                         00561001
+             CLOSE CARDIN                                                00570000
+       *----- ADD CLOSE FOR EMP-KSDS                                     00580002
+ C4          CLOSE EMP-KSDS                                              00581013
+       *----- ADD CLOSE FOR DEPT-KSDS                                    00596022
+ C10         CLOSE DEPT-KSDS                                             00597022
+                                                                         00597126
+ C10   *----- ADD STATUS CODE CHECKING                                   00598021
+             IF WS-CARDIN-STATUS-CODE = '00'                             00598126
+                CONTINUE                                                 00598226
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00598326
+                           WS-CARDIN-STATUS-CODE                         00598426
+             END-IF                                                      00598526
+ C5         IF WS-EMP-KSDS-STATUS-CODE = '00'                            00598626
+ C5            CONTINUE                                                  00598726
+ C5         ELSE DISPLAY 'CLOSE-WS-EMP-KSDS-STATUS-CODE='                00598852
+ C5                       WS-EMP-KSDS-STATUS-CODE                        00598926
+ C5          END-IF                                                      00599026
+ C10        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           00599122
+ C10           CONTINUE                                                  00599221
+ C10        ELSE DISPLAY 'CLOSE-WS-DEPT-KSDS-STATUS-CODE='               00599352
+ C10                      WS-DEPT-KSDS-STATUS-CODE                       00599422
+ C10         END-IF                                                      00599521
+             .                                                           00599647
+        0000-MAIN.                                                       00599748
+1                                                                                                              PAGE 0034
+ MEMBER NAME  VSAMSKEL
+             GOBACK                                                      00600000
+             .                                                           00610000
+                                                                         00611000
+         0500-PROCESS-INPUT.                                             00620000
+             DISPLAY '0500-PROCESS-INPUT'                                00630000
+             READ CARDIN RECORD INTO WS-IN-BUFFER                        00640000
+                AT END MOVE 'N' TO WS-INPUT-SWITCH                       00650000
+                NOT AT END CONTINUE                                      00660000
+             END-READ                                                    00670000
+                                                                         00680000
+             IF WS-CARDIN-STATUS-CODE = '00'                             00690000
+                CONTINUE                                                 00700000
+             ELSE DISPLAY 'READ CARDIN - WS-CARDIN-STATUS-CODE='         00710000
+                           WS-CARDIN-STATUS-CODE                         00720000
+             END-IF                                                      00730000
+             DISPLAY ' '                                                 00740000
+             DISPLAY ' '                                                 00750000
+             DISPLAY '*************************************'             00760000
+             DISPLAY '*************************************'             00770000
+             DISPLAY '*   WS-IN-BUFFER='  WS-IN-BUFFER                   00780058
+             DISPLAY '*************************************'             00790000
+             DISPLAY '*************************************'             00800000
+                                                                         00801000
+             IF MORE-INPUT                                               00810000
+                 EVALUATE WS-TRAN-CODE                                   00820000
+                     WHEN 'L' PERFORM 1000-WS-TRAN-L                     00830000
+                     WHEN 'A' PERFORM 2000-WS-TRAN-A                     00840000
+                     WHEN 'E' PERFORM 3000-WS-TRAN-E                     00850000
+                                 THRU 3000-EXIT                          00851029
+                     WHEN 'I' PERFORM 4000-WS-TRAN-I                     00860000
+                     WHEN 'D' PERFORM 5000-WS-TRAN-D                     00870000
+                     WHEN 'U' PERFORM 6000-WS-TRAN-U                     00880000
+                     WHEN 'Z' PERFORM 7000-WS-TRAN-Z                     00890000
+                     WHEN 'Y' PERFORM 8000-WS-TRAN-Y                     00900000
+                     WHEN 'X' PERFORM 9000-WS-TRAN-X                     00910000
+                     WHEN 'W' PERFORM A000-WS-TRAN-W                     00920000
+                     WHEN 'T' PERFORM B000-WS-TRAN-T                     00930000
+                     WHEN OTHER PERFORM N000-OTHER-TRAN                  00940000
+             END-EVALUATE                                                00950000
+             .                                                           00960000
+        1000-WS-TRAN-L.                                                  00970004
+             DISPLAY '  '                                                00980004
+             DISPLAY '   --------------------------------'               00990004
+             DISPLAY '   ---- PROCESS TRAN CODE L -------'               01000004
+             DISPLAY '   --------------------------------'               01010004
+       *----- ADD KEY READ                                               01020002
+ C8          MOVE CARDIN-EMPNO   TO EMP-KEY                              01020239
+ C8          READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY             01021039
+       *----- ADD STATUS CODE CHECKING .                                 01030002
+ C6          IF WS-EMP-KSDS-STATUS-CODE = '00'                           01031039
+ C6            DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01032021
+ C6          ELSE DISPLAY '1000-READ-WS-EMP-KSDS-STATUS-CODE='           01033052
+ C6                       WS-EMP-KSDS-STATUS-CODE                        01034013
+ C6          END-IF                                                      01035039
+             .                                                           01039220
+        2000-WS-TRAN-A.                                                  01040004
+             DISPLAY '  '                                                01050004
+             DISPLAY '    -------------------------------------'         01060004
+1                                                                                                              PAGE 0035
+ MEMBER NAME  VSAMSKEL
+             DISPLAY '2000 TRAN CODE A....'                              01070004
+       *???--MOVE LOW-VALUES TO EMP-KEY TO START FROM THE TOP            01071042
+             MOVE   LOW-VALUES          TO EMP-KEY                       01072042
+             START EMP-KSDS       KEY IS > EMP-KEY                       01073039
+             IF WS-EMP-KSDS-STATUS-CODE  =  '00'                         01074039
+                CONTINUE                                                 01074145
+             ELSE DISPLAY 'START ERROR   -   WS-EMP-KSDS-STATUS-CODE'    01075043
+                           WS-EMP-KSDS-STATUS-CODE                       01076034
+             END-IF                                                      01077034
+                  DISPLAY 'WS-TRAN-DEPARTMENT-NUMBER='                   01078054
+                           WS-TRAN-DEPARTMENT-NUMBER                     01078154
+                  DISPLAY 'WS-EMP-REC-DEPT-NUM='                         01078254
+                           WS-EMP-REC-DEPT-NUM                           01078354
+             MOVE '00'     TO WS-EMP-KSDS-STATUS-CODE                    01078456
+             PERFORM UNTIL WS-EMP-KSDS-STATUS-CODE NOT EQUAL '00'        01078553
+                 READ EMP-KSDS NEXT INTO WS-EMP-REC                      01079235
+                 IF WS-EMP-KSDS-STATUS-CODE EQUAL TO '00'                01079835
+                   AND WS-TRAN-DEPARTMENT-NUMBER = WS-EMP-REC-DEPT-NUM   01079935
+                 THEN DISPLAY 'WS-EMP-REC=' WS-EMP-REC                   01080035
+                 ELSE IF WS-EMP-KSDS-STATUS-CODE = '10'                  01080135
+                         DISPLAY '---- END OF EMP RECORDS ----'          01080235
+                 END-IF                                                  01080354
+                 END-IF                                                  01080437
+                 IF WS-EMP-KSDS-STATUS-CODE NOT = '00' AND NOT = '10'    01080537
+                    DISPLAY 'END-IF-READ NEXT ERROR STATUS CODE='        01080652
+                             WS-EMP-KSDS-STATUS-CODE                     01080737
+                 END-IF                                                  01080837
+             END-PERFORM                                                 01080953
+             .                                                           01081004
+        3000-WS-TRAN-E.                                                  01090004
+ C11   *----- READ EMP-KSDS USING TRAN-EMP-NO AS EMP-KEY                 01091029
+ C11   *----- DEISPLAY EMPLOYEE RECORD IF VALID EMP NUMBER IS FOUND      01091129
+ C11   *----- PERFORM EXIT IF TRAN-EMP-NO DOES'T MATCH ANY EMP-KSDS REC  01092029
+ C11   *----- READ DEPT-KSDS USING EMP-KSDS DEPARTMENT NUMBER            01093029
+ C11   *----- DISPLAY DEPARTMENT RECORD IF VALID RECORD IS FOUND         01094029
+ C11   *----- PERFORM EXIT IF VALID RECORD IS NOT FOUND                  01095029
+             DISPLAY '  '                                                01100004
+             DISPLAY '    -------------------------------------'         01110004
+             DISPLAY '3000 TRAN CODE E....'                              01120004
+ C11        MOVE CARDIN-EMPNO   TO EMP-KEY                               01121023
+ C11        READ EMP-KSDS    INTO WS-EMP-REC KEY IS EMP-KEY              01122023
+ C11   *----- ADD STATUS CODE CHECKING .                                 01123023
+ C11        IF WS-EMP-KSDS-STATUS-CODE = '00'                            01124023
+ C11           DISPLAY 'EMPLOYEE RECORD=' WS-EMP-REC                     01125023
+ C11           MOVE WS-EMP-REC-DEPT-NUM   TO DEPT-KEY                    01125130
+ C11        ELSE DISPLAY '3000-READ-WS-EMP-KSDS-STATUS-CODE='            01126052
+ C11                      WS-EMP-KSDS-STATUS-CODE                        01127023
+ C11   *----     PERFORM 3000-EXIT                                       01127150
+ C11        END-IF                                                       01128023
+                                                                         01128129
+ C11        READ DEPT-KSDS    INTO WS-DEPT-REC KEY IS DEPT-KEY           01129123
+ C11   *----- ADD STATUS CODE CHECKING .                                 01129223
+ C11        IF WS-DEPT-KSDS-STATUS-CODE = '00'                           01129323
+ C11           DISPLAY 'DEPARTMENT RECORD=' WS-DEPT-REC                  01129433
+ C11        ELSE DISPLAY '3000-READ-WS-DEPT-KSDS-STATUS-CODE='           01129652
+ C11                      WS-DEPT-KSDS-STATUS-CODE                       01129723
+ C11   *-----    PERFORM 3000-EXIT                                       01129850
+ C11        END-IF                                                       01129929
+1                                                                                                              PAGE 0036
+ MEMBER NAME  VSAMSKEL
+            .                                                            01130029
+       *----- EXIT PARAGRAPH                                             01130129
+          3000-EXIT.                                                     01130231
+             EXIT                                                        01130331
+             .                                                           01131004
+                                                                         01132029
+        4000-WS-TRAN-I.                                                  01140004
+             DISPLAY '  '                                                01150004
+             DISPLAY '    -------------------------------------'         01160004
+             DISPLAY '4000 TRAN CODE I....'                              01170004
+ C12        MOVE CARDIN-EMPNO    TO EMP-KEY                              01171057
+ C12        READ EMP-KSDS INTO WS-EMP-REC KEY IS EMP-KEY                 01172057
+ C12        IF WS-EMP-KSDS-STATUS-CODE = '00'                            01172157
+ C12           CONTINUE                                                  01172257
+ C12        ELSE DISPLAY '3000-READ-WS-EMP-KSDS-STATUS-CODE='            01172457
+ C12                      WS-EMP-KSDS-STATUS-CODE                        01172557
+                                                                         01173042
+                                                                         01174042
+                                                                         01175042
+                                                                         01176042
+                                                                         01177042
+                                                                         01178042
+                                                                         01179042
+                                                                         01179142
+                                                                         01179242
+                                                                         01179342
+                                                                         01179442
+                                                                         01179542
+                                                                         01179642
+                                                                         01179742
+                                                                         01179842
+                                                                         01179942
+             .                                                           01180031
+        5000-WS-TRAN-D.                                                  01190004
+             DISPLAY '  '                                                01200004
+             DISPLAY '   ----------------------------------'             01210004
+             DISPLAY '5000 TRAN CODE D....'                              01220004
+                 .                                                       01230000
+        6000-WS-TRAN-U.                                                  01240004
+             DISPLAY '  '                                                01250004
+             DISPLAY '   ----------------------------------'             01260004
+             DISPLAY '6000 TRAN CODE U....'                              01270004
+             .                                                           01280004
+        7000-WS-TRAN-Z.                                                  01290004
+             DISPLAY '  '                                                01300004
+             DISPLAY '   ----------------------------------'             01310004
+             DISPLAY '7000 TRAN CODE Z....'                              01320004
+             .                                                           01330004
+        8000-WS-TRAN-Y.                                                  01340004
+             DISPLAY '  '                                                01350004
+             DISPLAY '    -------------------------------------'         01360004
+             DISPLAY '8000 TRAN CODE Y....'                              01370004
+             .                                                           01380004
+        9000-WS-TRAN-X.                                                  01390004
+             DISPLAY '  '                                                01400004
+             DISPLAY '    -------------------------------------'         01410004
+             DISPLAY '9000 TRAN CODE X....'                              01420004
+             .                                                           01430004
+1                                                                                                              PAGE 0037
+ MEMBER NAME  VSAMSKEL
+        A000-WS-TRAN-W.                                                  01440004
+             DISPLAY '  '                                                01450004
+             DISPLAY '    -------------------------------------'         01460004
+             DISPLAY 'A000 TRAN CODE W....'                              01470004
+             .                                                           01480004
+        B000-WS-TRAN-T.                                                  01490004
+             DISPLAY '  '                                                01500004
+             DISPLAY '    -------------------------------------'         01510004
+             DISPLAY 'B000 TRAN CODE T....'                              01520004
+             .                                                           01530004
+        N000-OTHER-TRAN.                                                 01540004
+             DISPLAY 'N000 OTHER TRAN ....'                              01550004
+             .                                                           01560004
+
